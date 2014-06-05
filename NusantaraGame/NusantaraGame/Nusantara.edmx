@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NusantaraModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="NusantaraModelStoreContainer">
+          <EntitySet Name="Player" EntityType="NusantaraModel.Store.Player" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PlayerSoal" EntityType="NusantaraModel.Store.PlayerSoal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Provinsi" EntityType="NusantaraModel.Store.Provinsi" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Settings" EntityType="NusantaraModel.Store.Settings" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.Store.FK_PlayerSoal_Player">
+            <End Role="Player" EntitySet="Player" />
+            <End Role="PlayerSoal" EntitySet="PlayerSoal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.Store.FK_PlayerSoal_Provinsi">
+            <End Role="Provinsi" EntitySet="Provinsi" />
+            <End Role="PlayerSoal" EntitySet="PlayerSoal" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Player">
+          <Key>
+            <PropertyRef Name="PlayerId" />
+          </Key>
+          <Property Name="PlayerId" Type="int" Nullable="false" />
+          <Property Name="LastNyawa" Type="int" />
+          <Property Name="LastScore" Type="int" />
+        </EntityType>
+        <EntityType Name="PlayerSoal">
+          <Key>
+            <PropertyRef Name="SoalId" />
+          </Key>
+          <Property Name="SoalId" Type="int" Nullable="false" />
+          <Property Name="PlayerId" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Provinsi">
+          <Key>
+            <PropertyRef Name="SoalId" />
+          </Key>
+          <Property Name="SoalId" Type="int" Nullable="false" />
+          <Property Name="Soal" Type="text" />
+          <Property Name="UrlGambar" Type="text" />
+          <Property Name="LevelSoal" Type="int" />
+          <Property Name="IbuKota" Type="text" />
+          <Property Name="LuasWilayah" Type="text" />
+          <Property Name="Suku" Type="text" />
+          <Property Name="BahasaDaerah" Type="text" />
+          <Property Name="RumahAdat" Type="image" />
+          <Property Name="BajuAdat" Type="image" />
+          <Property Name="Flora" Type="text" />
+          <Property Name="Fauna" Type="text" />
+          <Property Name="PotensiAlam" Type="text" />
+          <Property Name="TempatWisata" Type="text" />
+        </EntityType>
+        <EntityType Name="Settings">
+          <Key>
+            <PropertyRef Name="SettingId" />
+          </Key>
+          <Property Name="SettingId" Type="int" Nullable="false" />
+          <Property Name="GambarBenar" Type="text" />
+          <Property Name="GambarSalah" Type="text" />
+          <Property Name="GambarBelum" Type="text" />
+          <Property Name="ScoreAwal" Type="int" />
+          <Property Name="NyawaAwal" Type="int" />
+        </EntityType>
+        <Association Name="FK_PlayerSoal_Player">
+          <End Role="Player" Type="NusantaraModel.Store.Player" Multiplicity="1" />
+          <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Player">
+              <PropertyRef Name="PlayerId" />
+            </Principal>
+            <Dependent Role="PlayerSoal">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlayerSoal_Provinsi">
+          <End Role="Provinsi" Type="NusantaraModel.Store.Provinsi" Multiplicity="1" />
+          <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Provinsi">
+              <PropertyRef Name="SoalId" />
+            </Principal>
+            <Dependent Role="PlayerSoal">
+              <PropertyRef Name="SoalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NusantaraModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="NusantaraEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Players" EntityType="NusantaraModel.Player" />
+          <EntitySet Name="PlayerSoals" EntityType="NusantaraModel.PlayerSoal" />
+          <EntitySet Name="Provinsis" EntityType="NusantaraModel.Provinsi" />
+          <EntitySet Name="Settings" EntityType="NusantaraModel.Setting" />
+          <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.FK_PlayerSoal_Player">
+            <End Role="Player" EntitySet="Players" />
+            <End Role="PlayerSoal" EntitySet="PlayerSoals" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.FK_PlayerSoal_Provinsi">
+            <End Role="Provinsi" EntitySet="Provinsis" />
+            <End Role="PlayerSoal" EntitySet="PlayerSoals" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Player">
+          <Key>
+            <PropertyRef Name="PlayerId" />
+          </Key>
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="LastNyawa" Type="Int32" />
+          <Property Name="LastScore" Type="Int32" />
+          <NavigationProperty Name="PlayerSoals" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="Player" ToRole="PlayerSoal" />
+        </EntityType>
+        <EntityType Name="PlayerSoal">
+          <Key>
+            <PropertyRef Name="SoalId" />
+          </Key>
+          <Property Name="SoalId" Type="Int32" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Player" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="PlayerSoal" ToRole="Player" />
+          <NavigationProperty Name="Provinsi" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="PlayerSoal" ToRole="Provinsi" />
+        </EntityType>
+        <EntityType Name="Provinsi">
+          <Key>
+            <PropertyRef Name="SoalId" />
+          </Key>
+          <Property Name="SoalId" Type="Int32" Nullable="false" />
+          <Property Name="Soal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UrlGambar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="LevelSoal" Type="Int32" />
+          <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="LuasWilayah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Suku" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="BahasaDaerah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="RumahAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="BajuAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Flora" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="TempatWisata" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="PlayerSoal" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="Provinsi" ToRole="PlayerSoal" />
+        </EntityType>
+        <EntityType Name="Setting">
+          <Key>
+            <PropertyRef Name="SettingId" />
+          </Key>
+          <Property Name="SettingId" Type="Int32" Nullable="false" />
+          <Property Name="GambarBenar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="GambarSalah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="GambarBelum" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ScoreAwal" Type="Int32" />
+          <Property Name="NyawaAwal" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_PlayerSoal_Player">
+          <End Role="Player" Type="NusantaraModel.Player" Multiplicity="1" />
+          <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Player">
+              <PropertyRef Name="PlayerId" />
+            </Principal>
+            <Dependent Role="PlayerSoal">
+              <PropertyRef Name="PlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlayerSoal_Provinsi">
+          <End Role="Provinsi" Type="NusantaraModel.Provinsi" Multiplicity="1" />
+          <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Provinsi">
+              <PropertyRef Name="SoalId" />
+            </Principal>
+            <Dependent Role="PlayerSoal">
+              <PropertyRef Name="SoalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities1">
+          <EntitySetMapping Name="Players">
+            <EntityTypeMapping TypeName="NusantaraModel.Player">
+              <MappingFragment StoreEntitySet="Player">
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+                <ScalarProperty Name="LastNyawa" ColumnName="LastNyawa" />
+                <ScalarProperty Name="LastScore" ColumnName="LastScore" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlayerSoals">
+            <EntityTypeMapping TypeName="NusantaraModel.PlayerSoal">
+              <MappingFragment StoreEntitySet="PlayerSoal">
+                <ScalarProperty Name="SoalId" ColumnName="SoalId" />
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Provinsis">
+            <EntityTypeMapping TypeName="NusantaraModel.Provinsi">
+              <MappingFragment StoreEntitySet="Provinsi">
+                <ScalarProperty Name="SoalId" ColumnName="SoalId" />
+                <ScalarProperty Name="Soal" ColumnName="Soal" />
+                <ScalarProperty Name="UrlGambar" ColumnName="UrlGambar" />
+                <ScalarProperty Name="LevelSoal" ColumnName="LevelSoal" />
+                <ScalarProperty Name="IbuKota" ColumnName="IbuKota" />
+                <ScalarProperty Name="LuasWilayah" ColumnName="LuasWilayah" />
+                <ScalarProperty Name="Suku" ColumnName="Suku" />
+                <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
+                <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
+                <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
+                <ScalarProperty Name="Flora" ColumnName="Flora" />
+                <ScalarProperty Name="Fauna" ColumnName="Fauna" />
+                <ScalarProperty Name="PotensiAlam" ColumnName="PotensiAlam" />
+                <ScalarProperty Name="TempatWisata" ColumnName="TempatWisata" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Settings">
+            <EntityTypeMapping TypeName="NusantaraModel.Setting">
+              <MappingFragment StoreEntitySet="Settings">
+                <ScalarProperty Name="SettingId" ColumnName="SettingId" />
+                <ScalarProperty Name="GambarBenar" ColumnName="GambarBenar" />
+                <ScalarProperty Name="GambarSalah" ColumnName="GambarSalah" />
+                <ScalarProperty Name="GambarBelum" ColumnName="GambarBelum" />
+                <ScalarProperty Name="ScoreAwal" ColumnName="ScoreAwal" />
+                <ScalarProperty Name="NyawaAwal" ColumnName="NyawaAwal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
