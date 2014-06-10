@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities1">
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="NusantaraModel.Player">
+        <MappingFragment StoreEntitySet="Player">
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="LastNyawa" ColumnName="LastNyawa" />
+          <ScalarProperty Name="LastScore" ColumnName="LastScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlayerSoals">
+      <EntityTypeMapping TypeName="NusantaraModel.PlayerSoal">
+        <MappingFragment StoreEntitySet="PlayerSoal">
+          <ScalarProperty Name="SoalId" ColumnName="SoalId" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinsis">
+      <EntityTypeMapping TypeName="NusantaraModel.Provinsi">
+        <MappingFragment StoreEntitySet="Provinsi">
+          <ScalarProperty Name="SoalId" ColumnName="SoalId" />
+          <ScalarProperty Name="Soal" ColumnName="Soal" />
+          <ScalarProperty Name="UrlGambar" ColumnName="UrlGambar" />
+          <ScalarProperty Name="LevelSoal" ColumnName="LevelSoal" />
+          <ScalarProperty Name="IbuKota" ColumnName="IbuKota" />
+          <ScalarProperty Name="LuasWilayah" ColumnName="LuasWilayah" />
+          <ScalarProperty Name="Suku" ColumnName="Suku" />
+          <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
+          <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
+          <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
+          <ScalarProperty Name="Flora" ColumnName="Flora" />
+          <ScalarProperty Name="Fauna" ColumnName="Fauna" />
+          <ScalarProperty Name="PotensiAlam" ColumnName="PotensiAlam" />
+          <ScalarProperty Name="TempatWisata" ColumnName="TempatWisata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="NusantaraModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="SettingId" ColumnName="SettingId" />
+          <ScalarProperty Name="GambarBenar" ColumnName="GambarBenar" />
+          <ScalarProperty Name="GambarSalah" ColumnName="GambarSalah" />
+          <ScalarProperty Name="GambarBelum" ColumnName="GambarBelum" />
+          <ScalarProperty Name="ScoreAwal" ColumnName="ScoreAwal" />
+          <ScalarProperty Name="NyawaAwal" ColumnName="NyawaAwal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

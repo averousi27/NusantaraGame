@@ -10,35 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NusantaraGame
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Level.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Level : Window
     {
-        public MainWindow()
+        public Level()
         {
             InitializeComponent();
-
-            SoalController pc = new SoalController();
-            IEnumerable<Provinsi> provinsis = pc.GetAllData();
-            foreach (var item in provinsis)
-            {
-                MessageBox.Show(item.ToString());
-            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Level level = new Level();
-            level.Show();
+            SoalSatu soal1 = new SoalSatu();
+            soal1.Show();
             this.Hide();
         }
 
-
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            SoalDua soal2 = new SoalDua();
+            soal2.Show();
+            this.Hide();
+        }
     }
 }

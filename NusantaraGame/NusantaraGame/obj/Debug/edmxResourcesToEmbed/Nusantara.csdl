@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NusantaraModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="NusantaraEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Players" EntityType="NusantaraModel.Player" />
+    <EntitySet Name="PlayerSoals" EntityType="NusantaraModel.PlayerSoal" />
+    <EntitySet Name="Provinsis" EntityType="NusantaraModel.Provinsi" />
+    <EntitySet Name="Settings" EntityType="NusantaraModel.Setting" />
+    <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.FK_PlayerSoal_Player">
+      <End Role="Player" EntitySet="Players" />
+      <End Role="PlayerSoal" EntitySet="PlayerSoals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.FK_PlayerSoal_Provinsi">
+      <End Role="Provinsi" EntitySet="Provinsis" />
+      <End Role="PlayerSoal" EntitySet="PlayerSoals" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Player">
+    <Key>
+      <PropertyRef Name="PlayerId" />
+    </Key>
+    <Property Name="PlayerId" Type="Int32" Nullable="false" />
+    <Property Name="LastNyawa" Type="Int32" />
+    <Property Name="LastScore" Type="Int32" />
+    <NavigationProperty Name="PlayerSoals" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="Player" ToRole="PlayerSoal" />
+  </EntityType>
+  <EntityType Name="PlayerSoal">
+    <Key>
+      <PropertyRef Name="SoalId" />
+    </Key>
+    <Property Name="SoalId" Type="Int32" Nullable="false" />
+    <Property Name="PlayerId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Player" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="PlayerSoal" ToRole="Player" />
+    <NavigationProperty Name="Provinsi" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="PlayerSoal" ToRole="Provinsi" />
+  </EntityType>
+  <EntityType Name="Provinsi">
+    <Key>
+      <PropertyRef Name="SoalId" />
+    </Key>
+    <Property Name="SoalId" Type="Int32" Nullable="false" />
+    <Property Name="Soal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UrlGambar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LevelSoal" Type="Int32" />
+    <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LuasWilayah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Suku" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="BahasaDaerah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RumahAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BajuAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Flora" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TempatWisata" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="PlayerSoal" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="Provinsi" ToRole="PlayerSoal" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="SettingId" />
+    </Key>
+    <Property Name="SettingId" Type="Int32" Nullable="false" />
+    <Property Name="GambarBenar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="GambarSalah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="GambarBelum" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ScoreAwal" Type="Int32" />
+    <Property Name="NyawaAwal" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_PlayerSoal_Player">
+    <End Role="Player" Type="NusantaraModel.Player" Multiplicity="1" />
+    <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="PlayerId" />
+      </Principal>
+      <Dependent Role="PlayerSoal">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayerSoal_Provinsi">
+    <End Role="Provinsi" Type="NusantaraModel.Provinsi" Multiplicity="1" />
+    <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Provinsi">
+        <PropertyRef Name="SoalId" />
+      </Principal>
+      <Dependent Role="PlayerSoal">
+        <PropertyRef Name="SoalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

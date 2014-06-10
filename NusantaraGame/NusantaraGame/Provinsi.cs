@@ -11,6 +11,7 @@ namespace NusantaraGame
 {
     using System;
     using System.Collections.Generic;
+using System.Text;
     
     public partial class Provinsi
     {
@@ -28,7 +29,16 @@ namespace NusantaraGame
         public string Fauna { get; set; }
         public string PotensiAlam { get; set; }
         public string TempatWisata { get; set; }
-    
+
         public virtual PlayerSoal PlayerSoal { get; set; }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(SoalId + ".\n");
+
+            return sb.ToString();
+        }
     }
 }
