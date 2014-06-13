@@ -1,9 +1,12 @@
 ﻿<Window x:Class="NusantaraGame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="300" Width="316">
+        Title="Nusantara Game 0.1" Height="600" Width="800" SizeToContent="WidthAndHeight" Background="#FF34AA74" Foreground="#FFABCDB3">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="91,112,0,0" Height="59" Click="Button_Click_1"/>
+        <Button x:Name="Btn_Mulai" Content="MULAI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="340,300,0,0" Height="59" Click="Button_Click_1"/>
+        <Button Content="ABOUT" HorizontalAlignment="Left" Width="120" Margin="340,379,0,0" VerticalAlignment="Top" Height="59"/>
+        <Button Content="EXIT" HorizontalAlignment="Left" Margin="340,458,0,0" VerticalAlignment="Top" Width="120" Height="59"/>
+
 
     </Grid>
 </Window>
