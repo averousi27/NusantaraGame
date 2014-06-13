@@ -1,12 +1,14 @@
 ﻿<Window x:Class="NusantaraGame.Level"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Level" Height="300" Width="316
-        ">
+        Title="Level" Height="600" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="33,39,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="33,95,0,0" VerticalAlignment="Top" Width="117" Height="39" Click="Button_Click_2"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="33,155,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0,0.227" Height="36"/>
-
+        <Button Content="Level 1" HorizontalAlignment="Left" Margin="295,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+        <Button Content="Level 2" HorizontalAlignment="Left" Margin="465,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+        <Button Content="Level 3" HorizontalAlignment="Left" Margin="295,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+        <Button Content="Level 4" HorizontalAlignment="Left" Margin="465,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+        <Button Content="Level 5" HorizontalAlignment="Left" Margin="295,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+        <Button Content="Level 6" HorizontalAlignment="Left" Margin="465,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
+     
     </Grid>
 </Window>

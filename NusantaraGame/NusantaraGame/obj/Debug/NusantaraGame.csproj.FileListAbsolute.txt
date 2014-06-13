@@ -19,3 +19,6 @@ D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalDu
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.baml
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.g.cs
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
