@@ -74,7 +74,7 @@
     <Compile Include="Soal.xaml.cs">
       <DependentUpon>Soal.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SoalController.cs" />
+    <Compile Include="ProvinsiController.cs" />
     <Compile Include="PlayerSoal.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
@@ -84,11 +84,8 @@
     <Compile Include="Setting.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
-    <Compile Include="SoalDua.xaml.cs">
-      <DependentUpon>SoalDua.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SoalSatu.xaml.cs">
-      <DependentUpon>SoalSatu.xaml</DependentUpon>
+    <Compile Include="ViewSoal.xaml.cs">
+      <DependentUpon>ViewSoal.xaml</DependentUpon>
     </Compile>
     <Page Include="Level.xaml">
       <SubType>Designer</SubType>
@@ -110,11 +107,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SoalDua.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SoalSatu.xaml">
+    <Page Include="ViewSoal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

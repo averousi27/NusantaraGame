@@ -53,15 +53,13 @@ D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Deb
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\Level.baml
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.baml
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\Soal.baml
-D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.baml
-D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.baml
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\Level.g.cs
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.g.cs
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\Soal.g.cs
-D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.g.cs
-D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.g.cs
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\App.g.cs
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame_MarkupCompile.cache
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.g.resources
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.Properties.Resources.resources
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
+D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.baml
+D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.g.cs

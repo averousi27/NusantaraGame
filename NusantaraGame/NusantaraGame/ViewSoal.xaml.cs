@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace NusantaraGame
 {
     /// <summary>
-    /// Interaction logic for SoalDua.xaml
+    /// Interaction logic for ViewSoal.xaml
     /// </summary>
-    public partial class SoalDua : Window
+    public partial class ViewSoal : Window
     {
-        public SoalDua()
+        public ViewSoal()
         {
             InitializeComponent();
         }
+
+        //public void ShowDialog(ref TextBlock Soal)
+        //{
+        //    ViewSoal.Text = ViewSoal.Text;
+
+        //    this.ShowDialog();
+        //}
     }
 }
