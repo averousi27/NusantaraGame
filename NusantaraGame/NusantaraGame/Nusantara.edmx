@@ -9,7 +9,7 @@
           <EntitySet Name="Player" EntityType="NusantaraModel.Store.Player" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="PlayerSoal" EntityType="NusantaraModel.Store.PlayerSoal" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Provinsi" EntityType="NusantaraModel.Store.Provinsi" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Settings" EntityType="NusantaraModel.Store.Settings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Setting" EntityType="NusantaraModel.Store.Setting" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.Store.FK_PlayerSoal_Player">
             <End Role="Player" EntitySet="Player" />
             <End Role="PlayerSoal" EntitySet="PlayerSoal" />
@@ -32,7 +32,7 @@
             <PropertyRef Name="SoalId" />
           </Key>
           <Property Name="SoalId" Type="int" Nullable="false" />
-          <Property Name="PlayerId" Type="int" Nullable="false" />
+          <Property Name="PlayerId" Type="int" />
           <Property Name="Status" Type="varchar" MaxLength="1" />
         </EntityType>
         <EntityType Name="Provinsi">
@@ -41,20 +41,20 @@
           </Key>
           <Property Name="SoalId" Type="int" Nullable="false" />
           <Property Name="Soal" Type="text" />
-          <Property Name="UrlGambar" Type="text" />
-          <Property Name="LevelSoal" Type="int" />
+          <Property Name="URLGambar" Type="text" />
+          <Property Name="LevelSoal" Type="text" />
           <Property Name="IbuKota" Type="text" />
           <Property Name="LuasWilayah" Type="text" />
           <Property Name="Suku" Type="text" />
-          <Property Name="BajuAdat" Type="text" />
-          <Property Name="RumahAdat" Type="text" />
           <Property Name="BahasaDaerah" Type="text" />
+          <Property Name="RumahAdat" Type="text" />
+          <Property Name="BajuAdat" Type="text" />
           <Property Name="Flora" Type="text" />
           <Property Name="Fauna" Type="text" />
           <Property Name="PotensiAlam" Type="text" />
           <Property Name="TempatWisata" Type="text" />
         </EntityType>
-        <EntityType Name="Settings">
+        <EntityType Name="Setting">
           <Key>
             <PropertyRef Name="SettingId" />
           </Key>
@@ -66,7 +66,7 @@
           <Property Name="NyawaAwal" Type="int" />
         </EntityType>
         <Association Name="FK_PlayerSoal_Player">
-          <End Role="Player" Type="NusantaraModel.Store.Player" Multiplicity="1" />
+          <End Role="Player" Type="NusantaraModel.Store.Player" Multiplicity="0..1" />
           <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Player">
@@ -94,7 +94,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NusantaraModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="NusantaraEntities2" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="NusantaraEntities4" p1:LazyLoadingEnabled="true">
           <EntitySet Name="Players" EntityType="NusantaraModel.Player" />
           <EntitySet Name="PlayerSoals" EntityType="NusantaraModel.PlayerSoal" />
           <EntitySet Name="Provinsis" EntityType="NusantaraModel.Provinsi" />
@@ -122,7 +122,7 @@
             <PropertyRef Name="SoalId" />
           </Key>
           <Property Name="SoalId" Type="Int32" Nullable="false" />
-          <Property Name="PlayerId" Type="Int32" Nullable="false" />
+          <Property Name="PlayerId" Type="Int32" />
           <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="Player" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="PlayerSoal" ToRole="Player" />
           <NavigationProperty Name="Provinsi" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="PlayerSoal" ToRole="Provinsi" />
@@ -133,14 +133,14 @@
           </Key>
           <Property Name="SoalId" Type="Int32" Nullable="false" />
           <Property Name="Soal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-          <Property Name="UrlGambar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-          <Property Name="LevelSoal" Type="Int32" />
+          <Property Name="URLGambar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="LevelSoal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="LuasWilayah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Suku" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-          <Property Name="BajuAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-          <Property Name="RumahAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="BahasaDaerah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="RumahAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="BajuAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Flora" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
@@ -159,7 +159,7 @@
           <Property Name="NyawaAwal" Type="Int32" />
         </EntityType>
         <Association Name="FK_PlayerSoal_Player">
-          <End Role="Player" Type="NusantaraModel.Player" Multiplicity="1" />
+          <End Role="Player" Type="NusantaraModel.Player" Multiplicity="0..1" />
           <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Player">
@@ -187,7 +187,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities2">
+        <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities4">
           <EntitySetMapping Name="Players">
             <EntityTypeMapping TypeName="NusantaraModel.Player">
               <MappingFragment StoreEntitySet="Player">
@@ -211,14 +211,14 @@
               <MappingFragment StoreEntitySet="Provinsi">
                 <ScalarProperty Name="SoalId" ColumnName="SoalId" />
                 <ScalarProperty Name="Soal" ColumnName="Soal" />
-                <ScalarProperty Name="UrlGambar" ColumnName="UrlGambar" />
+                <ScalarProperty Name="URLGambar" ColumnName="URLGambar" />
                 <ScalarProperty Name="LevelSoal" ColumnName="LevelSoal" />
                 <ScalarProperty Name="IbuKota" ColumnName="IbuKota" />
                 <ScalarProperty Name="LuasWilayah" ColumnName="LuasWilayah" />
                 <ScalarProperty Name="Suku" ColumnName="Suku" />
-                <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
-                <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
                 <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
+                <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
+                <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
                 <ScalarProperty Name="Flora" ColumnName="Flora" />
                 <ScalarProperty Name="Fauna" ColumnName="Fauna" />
                 <ScalarProperty Name="PotensiAlam" ColumnName="PotensiAlam" />
@@ -228,7 +228,7 @@
           </EntitySetMapping>
           <EntitySetMapping Name="Settings">
             <EntityTypeMapping TypeName="NusantaraModel.Setting">
-              <MappingFragment StoreEntitySet="Settings">
+              <MappingFragment StoreEntitySet="Setting">
                 <ScalarProperty Name="SettingId" ColumnName="SettingId" />
                 <ScalarProperty Name="GambarBenar" ColumnName="GambarBenar" />
                 <ScalarProperty Name="GambarSalah" ColumnName="GambarSalah" />
@@ -254,7 +254,6 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

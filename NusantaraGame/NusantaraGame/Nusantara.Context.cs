@@ -13,10 +13,10 @@ namespace NusantaraGame
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NusantaraEntities2 : DbContext
+    public partial class NusantaraEntities4 : DbContext
     {
-        public NusantaraEntities2()
-            : base("name=NusantaraEntities2")
+        public NusantaraEntities4()
+            : base("name=NusantaraEntities4")
         {
         }
     

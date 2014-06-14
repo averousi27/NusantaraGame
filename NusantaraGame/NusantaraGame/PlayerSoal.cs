@@ -15,7 +15,7 @@ namespace NusantaraGame
     public partial class PlayerSoal
     {
         public int SoalId { get; set; }
-        public int PlayerId { get; set; }
+        public Nullable<int> PlayerId { get; set; }
         public string Status { get; set; }
     
         public virtual Player Player { get; set; }

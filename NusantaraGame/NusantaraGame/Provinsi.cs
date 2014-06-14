@@ -16,14 +16,14 @@ namespace NusantaraGame
     {
         public int SoalId { get; set; }
         public string Soal { get; set; }
-        public string UrlGambar { get; set; }
-        public Nullable<int> LevelSoal { get; set; }
+        public string URLGambar { get; set; }
+        public string LevelSoal { get; set; }
         public string IbuKota { get; set; }
         public string LuasWilayah { get; set; }
         public string Suku { get; set; }
-        public string BajuAdat { get; set; }
-        public string RumahAdat { get; set; }
         public string BahasaDaerah { get; set; }
+        public string RumahAdat { get; set; }
+        public string BajuAdat { get; set; }
         public string Flora { get; set; }
         public string Fauna { get; set; }
         public string PotensiAlam { get; set; }
