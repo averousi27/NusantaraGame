@@ -22,3 +22,6 @@ D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalSa
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
+D:\kuliah\Semester 6\NET C\FP\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
+D:\kuliah\Semester 6\NET C\FP\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
+D:\kuliah\Semester 6\NET C\FP\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb

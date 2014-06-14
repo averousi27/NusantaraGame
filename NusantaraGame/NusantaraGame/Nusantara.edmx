@@ -46,9 +46,9 @@
           <Property Name="IbuKota" Type="text" />
           <Property Name="LuasWilayah" Type="text" />
           <Property Name="Suku" Type="text" />
+          <Property Name="BajuAdat" Type="text" />
+          <Property Name="RumahAdat" Type="text" />
           <Property Name="BahasaDaerah" Type="text" />
-          <Property Name="RumahAdat" Type="image" />
-          <Property Name="BajuAdat" Type="image" />
           <Property Name="Flora" Type="text" />
           <Property Name="Fauna" Type="text" />
           <Property Name="PotensiAlam" Type="text" />
@@ -94,7 +94,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NusantaraModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="NusantaraEntities1" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="NusantaraEntities2" p1:LazyLoadingEnabled="true">
           <EntitySet Name="Players" EntityType="NusantaraModel.Player" />
           <EntitySet Name="PlayerSoals" EntityType="NusantaraModel.PlayerSoal" />
           <EntitySet Name="Provinsis" EntityType="NusantaraModel.Provinsi" />
@@ -138,9 +138,9 @@
           <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="LuasWilayah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Suku" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="BajuAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="RumahAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="BahasaDaerah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-          <Property Name="RumahAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="BajuAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Flora" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
           <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
@@ -187,7 +187,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities1">
+        <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities2">
           <EntitySetMapping Name="Players">
             <EntityTypeMapping TypeName="NusantaraModel.Player">
               <MappingFragment StoreEntitySet="Player">
@@ -216,9 +216,9 @@
                 <ScalarProperty Name="IbuKota" ColumnName="IbuKota" />
                 <ScalarProperty Name="LuasWilayah" ColumnName="LuasWilayah" />
                 <ScalarProperty Name="Suku" ColumnName="Suku" />
-                <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
-                <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
                 <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
+                <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
+                <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
                 <ScalarProperty Name="Flora" ColumnName="Flora" />
                 <ScalarProperty Name="Fauna" ColumnName="Fauna" />
                 <ScalarProperty Name="PotensiAlam" ColumnName="PotensiAlam" />
@@ -254,7 +254,6 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
