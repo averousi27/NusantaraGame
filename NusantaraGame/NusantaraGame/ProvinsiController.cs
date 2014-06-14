@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NusantaraGame
 {
-    class SoalController
+    class ProvinsiController
     {
         NusantaraEntities1 context = new NusantaraEntities1();
         public IEnumerable<Provinsi> GetAllData()
