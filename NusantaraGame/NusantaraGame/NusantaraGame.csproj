@@ -63,18 +63,24 @@
     <Compile Include="Level.xaml.cs">
       <DependentUpon>Level.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Nusantara.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Nusantara.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="Nusantara.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
+    <Compile Include="Nusantara.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Nusantara.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
-    <Compile Include="Soal.xaml.cs">
-      <DependentUpon>Soal.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProvinsiController.cs" />
     <Compile Include="PlayerSoal.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
@@ -84,6 +90,10 @@
     <Compile Include="Setting.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
+    <Compile Include="Soal.xaml.cs">
+      <DependentUpon>Soal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProvinsiController.cs" />
     <Compile Include="ViewSoal.xaml.cs">
       <DependentUpon>ViewSoal.xaml</DependentUpon>
     </Compile>
@@ -113,16 +123,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Nusantara.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Nusantara.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Nusantara.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Nusantara.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

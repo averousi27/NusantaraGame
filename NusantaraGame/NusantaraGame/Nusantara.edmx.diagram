@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3faeced6d1f240d2a37deb54661aa2a2" Name="Diagram1">
+      <Diagram DiagramId="c22b92755fde44b8872303e5549dfb1a" Name="Diagram1">
         <EntityTypeShape EntityType="NusantaraModel.Player" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="NusantaraModel.PlayerSoal" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="NusantaraModel.Provinsi" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />

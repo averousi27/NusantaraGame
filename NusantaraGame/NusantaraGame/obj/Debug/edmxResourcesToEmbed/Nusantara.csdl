@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="NusantaraModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="NusantaraEntities1" p1:LazyLoadingEnabled="true">
+  <EntityContainer Name="NusantaraEntities2" p1:LazyLoadingEnabled="true">
     <EntitySet Name="Players" EntityType="NusantaraModel.Player" />
     <EntitySet Name="PlayerSoals" EntityType="NusantaraModel.PlayerSoal" />
     <EntitySet Name="Provinsis" EntityType="NusantaraModel.Provinsi" />
@@ -44,9 +44,9 @@
     <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="LuasWilayah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="Suku" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="BajuAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RumahAdat" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="BahasaDaerah" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <Property Name="RumahAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <Property Name="BajuAdat" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="Flora" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />

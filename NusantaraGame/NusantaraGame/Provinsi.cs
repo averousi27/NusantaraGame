@@ -21,9 +21,9 @@ namespace NusantaraGame
         public string IbuKota { get; set; }
         public string LuasWilayah { get; set; }
         public string Suku { get; set; }
+        public string BajuAdat { get; set; }
+        public string RumahAdat { get; set; }
         public string BahasaDaerah { get; set; }
-        public byte[] RumahAdat { get; set; }
-        public byte[] BajuAdat { get; set; }
         public string Flora { get; set; }
         public string Fauna { get; set; }
         public string PotensiAlam { get; set; }

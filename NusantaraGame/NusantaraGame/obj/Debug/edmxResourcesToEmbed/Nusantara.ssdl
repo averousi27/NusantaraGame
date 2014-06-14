@@ -41,9 +41,9 @@
     <Property Name="IbuKota" Type="text" />
     <Property Name="LuasWilayah" Type="text" />
     <Property Name="Suku" Type="text" />
+    <Property Name="BajuAdat" Type="text" />
+    <Property Name="RumahAdat" Type="text" />
     <Property Name="BahasaDaerah" Type="text" />
-    <Property Name="RumahAdat" Type="image" />
-    <Property Name="BajuAdat" Type="image" />
     <Property Name="Flora" Type="text" />
     <Property Name="Fauna" Type="text" />
     <Property Name="PotensiAlam" Type="text" />
