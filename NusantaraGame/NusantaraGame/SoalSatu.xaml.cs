@@ -23,5 +23,16 @@ namespace NusantaraGame
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SoalController sc = new SoalController();
+            IEnumerable<Provinsi> provinsis = sc.GetLevel();
+            foreach (var item in provinsis)
+            {
+                if (item.SoalId == 1)
+                    MessageBox.Show(item.ToString());
+            }
+        }
     }
 }

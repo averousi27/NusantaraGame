@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="SoalSatu" Height="300" Width="316">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="22,56,0,0" VerticalAlignment="Top" Width="82" Height="44"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="22,56,0,0" VerticalAlignment="Top" Width="82" Height="44" Click="Button_Click_1"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="216,149,0,0" VerticalAlignment="Top" Width="82" Height="44"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="118,149,0,0" VerticalAlignment="Top" Width="82" Height="44"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="22,149,0,0" VerticalAlignment="Top" Width="82" Height="44"/>

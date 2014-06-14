@@ -24,12 +24,12 @@ namespace NusantaraGame
         {
             InitializeComponent();
 
-            SoalController pc = new SoalController();
-            IEnumerable<Provinsi> provinsis = pc.GetAllData();
-            foreach (var item in provinsis)
-            {
-                MessageBox.Show(item.ToString());
-            }
+            //SoalController pc = new SoalController();
+            //IEnumerable<Provinsi> provinsis = pc.GetAllData();
+            //foreach (var item in provinsis)
+            //{
+            //    MessageBox.Show(item.ToString());
+            //}
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

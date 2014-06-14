@@ -23,5 +23,10 @@ namespace NusantaraGame
         {
             InitializeComponent();
         }
+
+        private void soal1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

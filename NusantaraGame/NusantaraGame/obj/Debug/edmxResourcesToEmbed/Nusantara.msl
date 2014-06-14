@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities1">
+  <EntityContainerMapping StorageEntityContainer="NusantaraModelStoreContainer" CdmEntityContainer="NusantaraEntities2">
     <EntitySetMapping Name="Players">
       <EntityTypeMapping TypeName="NusantaraModel.Player">
         <MappingFragment StoreEntitySet="Player">
@@ -29,9 +29,9 @@
           <ScalarProperty Name="IbuKota" ColumnName="IbuKota" />
           <ScalarProperty Name="LuasWilayah" ColumnName="LuasWilayah" />
           <ScalarProperty Name="Suku" ColumnName="Suku" />
-          <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
-          <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
           <ScalarProperty Name="BajuAdat" ColumnName="BajuAdat" />
+          <ScalarProperty Name="RumahAdat" ColumnName="RumahAdat" />
+          <ScalarProperty Name="BahasaDaerah" ColumnName="BahasaDaerah" />
           <ScalarProperty Name="Flora" ColumnName="Flora" />
           <ScalarProperty Name="Fauna" ColumnName="Fauna" />
           <ScalarProperty Name="PotensiAlam" ColumnName="PotensiAlam" />

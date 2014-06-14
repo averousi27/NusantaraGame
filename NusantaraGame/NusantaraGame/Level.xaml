@@ -9,6 +9,7 @@
         <Button Content="Level 4" HorizontalAlignment="Left" Margin="465,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
         <Button Content="Level 5" HorizontalAlignment="Left" Margin="295,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
         <Button Content="Level 6" HorizontalAlignment="Left" Margin="465,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-     
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="-116,252,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
