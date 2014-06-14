@@ -24,11 +24,12 @@ namespace NusantaraGame
             InitializeComponent();
         }
 
-        //public void ShowDialog(ref TextBlock Soal)
-        //{
-        //    ViewSoal.Text = ViewSoal.Text;
-
-        //    this.ShowDialog();
-        //}
+        public void ShowDialog(ref int LevelSoal)
+        {
+            /* ini yang diedit
+             * TampilSoal.Text = ;
+             * this.ShowDialog();
+             */
+        }
     }
 }

@@ -19,29 +19,6 @@ D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalDu
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.baml
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.g.cs
 D:\kuliah\Semester 6\NET C\FP\FPNET\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.pdb
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.dll
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.xml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csprojResolveAssemblyReference.cache
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Level.baml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.baml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Soal.baml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.baml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.baml
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Level.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Soal.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\SoalSatu.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\App.g.cs
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame_MarkupCompile.cache
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.g.resources
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.Properties.Resources.resources
-E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
@@ -63,3 +40,24 @@ D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Deb
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.baml
 D:\kuliah\Semester 6\NET C\FP\FP PALING BARU\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.pdb
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.dll
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.xml
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csprojResolveAssemblyReference.cache
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Level.baml
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.baml
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Soal.baml
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.baml
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Level.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\Soal.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\App.g.cs
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame_MarkupCompile.cache
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.g.resources
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.Properties.Resources.resources
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
+E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
