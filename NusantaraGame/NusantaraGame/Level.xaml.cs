@@ -19,23 +19,48 @@ namespace NusantaraGame
     /// </summary>
     public partial class Level : Window
     {
-        public Level()
+        public Level() //Passing value level to Soal.xaml.cs
         {
             InitializeComponent();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            SoalSatu soal1 = new SoalSatu();
-            soal1.Show();
-            this.Hide();
+
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelSatu);
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            SoalDua soal2 = new SoalDua();
-            soal2.Show();
-            this.Hide();
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelDua);
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelTiga);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelEmpat);
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelLima);
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            Soal soal1 = new Soal();
+            soal1.ShowDialog(ref TextLevelEnam);
+        }
+
     }
 }
