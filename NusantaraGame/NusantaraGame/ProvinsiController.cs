@@ -9,11 +9,14 @@ namespace NusantaraGame
     class ProvinsiController
     {
         NusantaraEntities1 context = new NusantaraEntities1();
-        public IEnumerable<Provinsi> GetAllData()
+        public IEnumerable<Provinsi> GetLevel(int idLevel)
         {
+            //Console.WriteLine(idLevel);
             IEnumerable<Provinsi> result = from p in context.Provinsis
+                                           where p.LevelSoal==1
                                            select p;
             return result;
         }
+
     }
 }

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ViewSoal" Height="300" Width="300">
     <Grid>
-        <TextBlock x:Name="TampilSoal" HorizontalAlignment="Left" Margin="31,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="93" Width="229"/>
+        <TextBlock x:Name="TampilSoal" HorizontalAlignment="Left" Margin="31,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="229"/>
 
     </Grid>
 </Window>

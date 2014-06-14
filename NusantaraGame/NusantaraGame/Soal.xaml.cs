@@ -19,7 +19,7 @@ namespace NusantaraGame
     /// </summary>
     public partial class Soal : Window
     {
-
+        int a=1;
         int LevelSoal;
 
         public Soal()
@@ -57,7 +57,7 @@ namespace NusantaraGame
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref LevelSoal);
+            isiSoal.ShowDialog(ref LevelSoal, ref a);
         }
 
 

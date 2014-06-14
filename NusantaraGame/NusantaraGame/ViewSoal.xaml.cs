@@ -23,13 +23,18 @@ namespace NusantaraGame
         {
             InitializeComponent();
         }
-
-        public void ShowDialog(ref int LevelSoal)
+       
+        public void ShowDialog(ref int LevelSoal, ref int a)
         {
-            /* ini yang diedit
-             * TampilSoal.Text = ;
-             * this.ShowDialog();
-             */
+            
+           
+            ProvinsiController pc = new ProvinsiController();
+            IEnumerable<Provinsi> soal = pc.GetLevel(LevelSoal);
+            foreach (var item in soal)
+            { 
+                TampilSoal.Text = item.SoalId.ToString(); 
+            }
+            this.ShowDialog();
         }
     }
 }
