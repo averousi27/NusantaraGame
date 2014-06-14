@@ -24,14 +24,16 @@ namespace NusantaraGame
             InitializeComponent();
         }
        
-        public void ShowDialog(ref int LevelSoal, ref int IdSoal)
+        public void ShowDialog(ref TextBlock LevelSoal, ref int IdSoal)
         {
             //Console.WriteLine("1");
+            //int Level = Convert.ToInt32(LevelSoal);
+            int NoSoal = Convert.ToInt32(IdSoal);
             ProvinsiController pc = new ProvinsiController();
-            IEnumerable<Provinsi> soal = pc.GetLevel(1);
+            IEnumerable<Provinsi> soal = pc.GetLevel(LevelSoal.Text);
             foreach (var item in soal)
             { 
-                if(item.SoalId.Equals(IdSoal))
+                if(item.SoalId.Equals(NoSoal))
                    TampilSoal.Text = item.Soal.ToString(); 
             }
             this.ShowDialog();
