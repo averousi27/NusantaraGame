@@ -71,9 +71,6 @@
     <Compile Include="Player.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
-    <Compile Include="Soal.xaml.cs">
-      <DependentUpon>Soal.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SoalController.cs" />
     <Compile Include="PlayerSoal.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
@@ -106,10 +103,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Soal.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SoalDua.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
