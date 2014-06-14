@@ -3,12 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Level" Height="600" Width="800">
     <Grid>
-        <Button Content="Level 1" HorizontalAlignment="Left" Margin="295,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-        <Button Content="Level 2" HorizontalAlignment="Left" Margin="465,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-        <Button Content="Level 3" HorizontalAlignment="Left" Margin="295,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-        <Button Content="Level 4" HorizontalAlignment="Left" Margin="465,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-        <Button Content="Level 5" HorizontalAlignment="Left" Margin="295,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-        <Button Content="Level 6" HorizontalAlignment="Left" Margin="465,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1"/>
-     
+        <Button HorizontalAlignment="Left" Margin="295,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_1">
+            <TextBlock x:Name="TextLevelSatu" TextWrapping="Wrap" Text="1"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="465,252,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_2">
+            <TextBlock x:Name="TextLevelDua" TextWrapping="Wrap" Text="2"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="295,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_3">
+            <TextBlock x:Name="TextLevelTiga" TextWrapping="Wrap" Text="3"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="465,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_4">
+            <TextBlock x:Name="TextLevelEmpat" TextWrapping="Wrap" Text="4"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="295,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_5">
+            <TextBlock x:Name="TextLevelLima" TextWrapping="Wrap" Text="5"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="465,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_6">
+            <TextBlock x:Name="TextLevelEnam" TextWrapping="Wrap" Text="6"/>
+        </Button>
+
     </Grid>
 </Window>
