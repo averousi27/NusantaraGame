@@ -94,6 +94,9 @@
       <DependentUpon>Soal.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProvinsiController.cs" />
+    <Compile Include="SoalDua.xaml.cs">
+      <DependentUpon>SoalDua.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Soal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SoalDua.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
