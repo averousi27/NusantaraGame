@@ -9,19 +9,19 @@
         <Button HorizontalAlignment="Left" Margin="38,46,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_1">
             <TextBlock x:Name="Soal_1" TextWrapping="Wrap" Text="1"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="115,46,0,0" VerticalAlignment="Top" Width="54" Height="45">
+        <Button HorizontalAlignment="Left" Margin="115,46,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_2">
             <TextBlock x:Name="Soal_2" TextWrapping="Wrap" Text="2"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="194,46,0,0" VerticalAlignment="Top" Width="54" Height="45">
+        <Button HorizontalAlignment="Left" Margin="194,46,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_3">
             <TextBlock x:Name="Soal_3" TextWrapping="Wrap" Text="3"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="38,118,0,0" VerticalAlignment="Top" Width="54" Height="45">
+        <Button HorizontalAlignment="Left" Margin="38,118,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_4">
             <TextBlock x:Name="Soal_4" TextWrapping="Wrap" Text="4"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="115,118,0,0" VerticalAlignment="Top" Width="54" Height="45">
+        <Button HorizontalAlignment="Left" Margin="115,118,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_5">
             <TextBlock x:Name="Soal_5" TextWrapping="Wrap" Text="5"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="194,118,0,0" VerticalAlignment="Top" Width="54" Height="45">
+        <Button HorizontalAlignment="Left" Margin="194,118,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_6">
             <TextBlock x:Name="Soal_6" TextWrapping="Wrap" Text="6"/>
         </Button>
 

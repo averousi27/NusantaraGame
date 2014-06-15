@@ -15,11 +15,8 @@
         <Button HorizontalAlignment="Left" Margin="465,345,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_4">
             <TextBlock x:Name="TextLevelEmpat" TextWrapping="Wrap" Text="4"/>
         </Button>
-        <Button HorizontalAlignment="Left" Margin="295,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_5">
+        <Button HorizontalAlignment="Left" Margin="380,442,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_5">
             <TextBlock x:Name="TextLevelLima" TextWrapping="Wrap" Text="5"/>
-        </Button>
-        <Button HorizontalAlignment="Left" Margin="465,438,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_6">
-            <TextBlock x:Name="TextLevelEnam" TextWrapping="Wrap" Text="6"/>
         </Button>
 
     </Grid>

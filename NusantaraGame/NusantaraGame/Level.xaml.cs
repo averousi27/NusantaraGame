@@ -56,11 +56,5 @@ namespace NusantaraGame
             soal1.ShowDialog(ref TextLevelLima);
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
-        {
-            Soal soal1 = new Soal();
-            soal1.ShowDialog(ref TextLevelEnam);
-        }
-
     }
 }
