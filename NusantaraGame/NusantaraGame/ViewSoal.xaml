@@ -4,17 +4,15 @@
         Title="ViewSoal" Height="300" Width="300">
     <Grid>
         <TextBlock x:Name="TampilSoal" HorizontalAlignment="Left" Margin="31,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="229"/>
-        <RadioButton x:Name="NAD" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top">
-            <TextBlock x:Name="NAD1" TextWrapping="Wrap" Text="TextBlock"/>
+        <RadioButton HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top">
         </RadioButton>
-        <RadioButton x:Name="SumUt" HorizontalAlignment="Left" Margin="197,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,0.289">
-            <TextBlock x:Name="SumUt1" TextWrapping="Wrap" Text="TextBlock"/>
+        <RadioButton x:Name="SumUt" HorizontalAlignment="Left" Margin="61,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.333,0.289">
         </RadioButton>
         <RadioButton x:Name="SumBar" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top">
-            <TextBlock x:Name="SumBar1" TextWrapping="Wrap" Text="TextBlock"/>
         </RadioButton>
-        <RadioButton x:Name="SumSel" HorizontalAlignment="Left" Margin="197,176,0,0" VerticalAlignment="Top">
-            <TextBlock x:Name="SumSel1" TextWrapping="Wrap" Text="TextBlock"/>
+        <RadioButton x:Name="SumSel" HorizontalAlignment="Left" Margin="47,199,0,0" VerticalAlignment="Top">
+        </RadioButton>
+        <RadioButton x:Name="SumSel_Copy" HorizontalAlignment="Left" Margin="97,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.688,-0.562">
         </RadioButton>
 
     </Grid>
