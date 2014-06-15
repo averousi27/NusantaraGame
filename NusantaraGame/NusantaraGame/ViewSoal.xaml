@@ -80,6 +80,5 @@
         <RadioButton HorizontalAlignment="Left" Margin="272,216,0,0" VerticalAlignment="Top">
             <TextBlock x:Name="NTB" TextWrapping="Wrap"/>
         </RadioButton>
-
     </Grid>
 </Window>
