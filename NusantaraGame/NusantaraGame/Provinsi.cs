@@ -16,7 +16,7 @@ namespace NusantaraGame
     {
         public int SoalId { get; set; }
         public string Soal { get; set; }
-        public string URLGambar { get; set; }
+        public string UrlGambar { get; set; }
         public string LevelSoal { get; set; }
         public string IbuKota { get; set; }
         public string LuasWilayah { get; set; }
@@ -28,7 +28,5 @@ namespace NusantaraGame
         public string Fauna { get; set; }
         public string PotensiAlam { get; set; }
         public string TempatWisata { get; set; }
-    
-        public virtual PlayerSoal PlayerSoal { get; set; }
     }
 }

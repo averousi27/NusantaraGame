@@ -17,8 +17,5 @@ namespace NusantaraGame
         public int SoalId { get; set; }
         public Nullable<int> PlayerId { get; set; }
         public string Status { get; set; }
-    
-        public virtual Player Player { get; set; }
-        public virtual Provinsi Provinsi { get; set; }
     }
 }

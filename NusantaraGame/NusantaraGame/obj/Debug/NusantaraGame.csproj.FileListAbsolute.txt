@@ -61,3 +61,24 @@ E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
 E:\COLLEGE\Semester 6\.NET C\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe.config
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.exe
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csprojResolveAssemblyReference.cache
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Level.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Soal.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Level.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\MainWindow.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Soal.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\ViewSoal.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\App.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame_MarkupCompile.cache
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.g.resources
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.Properties.Resources.resources
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.exe
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\bin\Debug\NusantaraGame.pdb
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.dll
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\bin\Debug\EntityFramework.xml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.pdb

@@ -94,6 +94,9 @@
       <DependentUpon>Soal.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProvinsiController.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Nusantara.tt</DependentUpon>
+    </Compile>
     <Compile Include="ViewSoal.xaml.cs">
       <DependentUpon>ViewSoal.xaml</DependentUpon>
     </Compile>

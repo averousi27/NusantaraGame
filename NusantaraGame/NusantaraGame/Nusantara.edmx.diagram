@@ -4,13 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="92fc56949a114ba5af22e34d96b30400" Name="Diagram1">
-        <EntityTypeShape EntityType="NusantaraModel.Player" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="NusantaraModel.PlayerSoal" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="NusantaraModel.Provinsi" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+      <Diagram DiagramId="c874bd6695e4404aa62d80b95c04278c" Name="Diagram1">
+        <EntityTypeShape EntityType="NusantaraModel.Player" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NusantaraModel.PlayerSoal" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NusantaraModel.Provinsi" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="NusantaraModel.Setting" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="NusantaraModel.FK_PlayerSoal_Player" ManuallyRouted="false" />
-        <AssociationConnector Association="NusantaraModel.FK_PlayerSoal_Provinsi" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NusantaraModel.sysdiagram" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

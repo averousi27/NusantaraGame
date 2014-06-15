@@ -5,14 +5,7 @@
     <EntitySet Name="PlayerSoal" EntityType="NusantaraModel.Store.PlayerSoal" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Provinsi" EntityType="NusantaraModel.Store.Provinsi" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Settings" EntityType="NusantaraModel.Store.Settings" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.Store.FK_PlayerSoal_Player">
-      <End Role="Player" EntitySet="Player" />
-      <End Role="PlayerSoal" EntitySet="PlayerSoal" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.Store.FK_PlayerSoal_Provinsi">
-      <End Role="Provinsi" EntitySet="Provinsi" />
-      <End Role="PlayerSoal" EntitySet="PlayerSoal" />
-    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="NusantaraModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
   </EntityContainer>
   <EntityType Name="Player">
     <Key>
@@ -27,7 +20,7 @@
       <PropertyRef Name="SoalId" />
     </Key>
     <Property Name="SoalId" Type="int" Nullable="false" />
-    <Property Name="PlayerId" Type="int" Nullable="false" />
+    <Property Name="PlayerId" Type="int" />
     <Property Name="Status" Type="varchar" MaxLength="1" />
   </EntityType>
   <EntityType Name="Provinsi">
@@ -37,13 +30,13 @@
     <Property Name="SoalId" Type="int" Nullable="false" />
     <Property Name="Soal" Type="text" />
     <Property Name="UrlGambar" Type="text" />
-    <Property Name="LevelSoal" Type="int" />
+    <Property Name="LevelSoal" Type="text" />
     <Property Name="IbuKota" Type="text" />
     <Property Name="LuasWilayah" Type="text" />
     <Property Name="Suku" Type="text" />
-    <Property Name="BajuAdat" Type="text" />
-    <Property Name="RumahAdat" Type="text" />
     <Property Name="BahasaDaerah" Type="text" />
+    <Property Name="RumahAdat" Type="text" />
+    <Property Name="BajuAdat" Type="text" />
     <Property Name="Flora" Type="text" />
     <Property Name="Fauna" Type="text" />
     <Property Name="PotensiAlam" Type="text" />
@@ -56,32 +49,18 @@
     <Property Name="SettingId" Type="int" Nullable="false" />
     <Property Name="GambarBenar" Type="text" />
     <Property Name="GambarSalah" Type="text" />
-    <Property Name="GambarBelum" Type="text" />
     <Property Name="ScoreAwal" Type="int" />
     <Property Name="NyawaAwal" Type="int" />
+    <Property Name="GambarBelum" Type="text" />
   </EntityType>
-  <Association Name="FK_PlayerSoal_Player">
-    <End Role="Player" Type="NusantaraModel.Store.Player" Multiplicity="1" />
-    <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Player">
-        <PropertyRef Name="PlayerId" />
-      </Principal>
-      <Dependent Role="PlayerSoal">
-        <PropertyRef Name="PlayerId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_PlayerSoal_Provinsi">
-    <End Role="Provinsi" Type="NusantaraModel.Store.Provinsi" Multiplicity="1" />
-    <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Provinsi">
-        <PropertyRef Name="SoalId" />
-      </Principal>
-      <Dependent Role="PlayerSoal">
-        <PropertyRef Name="SoalId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
 </Schema>

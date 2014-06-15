@@ -12,10 +12,12 @@ namespace NusantaraGame
     using System;
     using System.Collections.Generic;
     
-    public partial class Player
+    public partial class sysdiagram
     {
-        public int PlayerId { get; set; }
-        public Nullable<int> LastNyawa { get; set; }
-        public Nullable<int> LastScore { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
