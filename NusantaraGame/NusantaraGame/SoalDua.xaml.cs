@@ -14,78 +14,67 @@ using System.Windows.Shapes;
 
 namespace NusantaraGame
 {
-    public partial class Soal : Window
+    /// <summary>
+    /// Interaction logic for SoalDua.xaml
+    /// </summary>
+    public partial class SoalDua : Window
     {
-        int a=1;
-       // str LevelSoal;
-
-        public Soal()
+        public SoalDua()
         {
             InitializeComponent();
         }
 
-        //Code untuk mengubah TextLevel yang berformat string menjadi int
-        //agar sesuai dengan database
-        //public int LevelInt(ref TextBlock TextLevel)
-        //{
-        //    int i;
-        //    String[] angkaS = { "1", "2", "3", "4", "5" };
-        //    int[] angkaI = { 1, 2, 3, 4, 5 };
-
-        //    for (i = 0; i < 5; i++)
-        //    {
-        //        if (TextLevel.Equals(angkaS[i]))
-        //            LevelSoal = angkaI[i];
-        //    }
-        //    return LevelSoal;
-        //}
-
         public void ShowDialog(ref TextBlock TextLevel)
         {
-            IdLevel.Text = TextLevel.Text;
+            IdLevelDua.Text = TextLevel.Text;
             this.ShowDialog();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_1);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_1);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_2);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_2);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_3);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_3);
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_4);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_4);
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_5);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_5);
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref Soal_6);//level, soal
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_6);
         }
 
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            ViewSoal isiSoal = new ViewSoal();
+            isiSoal.ShowDialog(ref IdLevelDua, ref SoalDua_7);
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -34,27 +34,26 @@ namespace NusantaraGame
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Soal soal1 = new Soal();
+            SoalDua soal1 = new SoalDua();
             soal1.ShowDialog(ref TextLevelDua);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Soal soal1 = new Soal();
+            SoalDua soal1 = new SoalDua();
             soal1.ShowDialog(ref TextLevelTiga);
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            Soal soal1 = new Soal();
+            SoalDua soal1 = new SoalDua();
             soal1.ShowDialog(ref TextLevelEmpat);
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            Soal soal1 = new Soal();
+            SoalDua soal1 = new SoalDua();
             soal1.ShowDialog(ref TextLevelLima);
         }
-
     }
 }
