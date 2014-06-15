@@ -22,6 +22,9 @@ namespace NusantaraGame
         public ViewSoal()
         {
             InitializeComponent();
+
+            PlayerController pc = new PlayerController();
+            nyawa.Text = pc.TampilNyawa().ToString();
         }
 
         public void ShowDialog(ref TextBlock LevelSoal, ref TextBlock IdSoal)

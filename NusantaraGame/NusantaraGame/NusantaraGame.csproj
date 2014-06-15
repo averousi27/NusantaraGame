@@ -81,6 +81,7 @@
     <Compile Include="Player.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
+    <Compile Include="PlayerController.cs" />
     <Compile Include="PlayerSoal.cs">
       <DependentUpon>Nusantara.tt</DependentUpon>
     </Compile>
