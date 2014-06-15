@@ -35,6 +35,8 @@ namespace NusantaraGame
         private void Button_Click_Mulai(object sender, RoutedEventArgs e)
         {
             PlayerController pc = new PlayerController();
+
+            pc.AddPlayer();
             Level level = new Level();
             level.Show();
             this.Hide();

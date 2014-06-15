@@ -25,6 +25,7 @@ namespace NusantaraGame
 
             PlayerController pc = new PlayerController();
             nyawa.Text = pc.TampilNyawa().ToString();
+            score.Text = pc.TampilScore().ToString();
         }
 
         public void ShowDialog(ref TextBlock LevelSoal, ref TextBlock IdSoal)

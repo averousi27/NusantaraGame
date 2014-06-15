@@ -9,7 +9,7 @@ namespace NusantaraGame
     class PlayerController
     {
         NusantaraEntities context = new NusantaraEntities();
-        public void AddPlayer(Player player)
+        public void AddPlayer()
         {
             Player ToUpdate = (from pUpdate in context.Players
                                where pUpdate.PlayerId == 1
@@ -29,6 +29,15 @@ namespace NusantaraGame
                         select nyawaUpdate).FirstOrDefault();
 
             return Convert.ToInt32(a.LastNyawa);
+        }
+
+        public int TampilScore()
+        {
+            Player a = (from nyawaUpdate in context.Players
+                        where nyawaUpdate.PlayerId == 1
+                        select nyawaUpdate).FirstOrDefault();
+
+            return Convert.ToInt32(a.LastScore);
         }
     }
 }
