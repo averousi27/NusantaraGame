@@ -17,8 +17,8 @@ namespace NusantaraGame
         public int SettingId { get; set; }
         public string GambarBenar { get; set; }
         public string GambarSalah { get; set; }
+        public string GambarBelum { get; set; }
         public Nullable<int> ScoreAwal { get; set; }
         public Nullable<int> NyawaAwal { get; set; }
-        public string GambarBelum { get; set; }
     }
 }

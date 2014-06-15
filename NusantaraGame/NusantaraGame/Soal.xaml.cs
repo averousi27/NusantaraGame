@@ -57,9 +57,8 @@ namespace NusantaraGame
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ViewSoal isiSoal = new ViewSoal();
-            isiSoal.ShowDialog(ref IdLevel, ref a);//level, soal
+            isiSoal.ShowDialog(ref IdLevel, ref Soal_1);//level, soal
         }
-
 
     }
 }

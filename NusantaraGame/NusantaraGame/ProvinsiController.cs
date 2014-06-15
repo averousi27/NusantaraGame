@@ -8,7 +8,7 @@ namespace NusantaraGame
 {
     class ProvinsiController
     {
-        NusantaraEntities1 context = new NusantaraEntities1();
+        NusantaraEntities context = new NusantaraEntities();
         public IEnumerable<Provinsi> GetLevel(string idLevel)
         {
             IEnumerable<Provinsi> result = from p in context.Provinsis
