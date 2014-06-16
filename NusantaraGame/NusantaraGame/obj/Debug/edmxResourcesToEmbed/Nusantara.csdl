@@ -10,10 +10,6 @@
       <End Role="Player" EntitySet="Players" />
       <End Role="PlayerSoal" EntitySet="PlayerSoals" />
     </AssociationSet>
-    <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.FK_PlayerSoal_Provinsi">
-      <End Role="Provinsi" EntitySet="Provinsis" />
-      <End Role="PlayerSoal" EntitySet="PlayerSoals" />
-    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Player">
     <Key>
@@ -32,14 +28,14 @@
     <Property Name="PlayerId" Type="Int32" />
     <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="Player" Relationship="NusantaraModel.FK_PlayerSoal_Player" FromRole="PlayerSoal" ToRole="Player" />
-    <NavigationProperty Name="Provinsi" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="PlayerSoal" ToRole="Provinsi" />
   </EntityType>
   <EntityType Name="Provinsi">
     <Key>
       <PropertyRef Name="SoalId" />
+      <PropertyRef Name="Soal" />
     </Key>
     <Property Name="SoalId" Type="Int32" Nullable="false" />
-    <Property Name="Soal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Soal" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="URLGambar" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="LevelSoal" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="IbuKota" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
@@ -52,7 +48,6 @@
     <Property Name="Fauna" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="PotensiAlam" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="TempatWisata" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="PlayerSoal" Relationship="NusantaraModel.FK_PlayerSoal_Provinsi" FromRole="Provinsi" ToRole="PlayerSoal" />
   </EntityType>
   <EntityType Name="Setting">
     <Key>
@@ -84,18 +79,6 @@
       </Principal>
       <Dependent Role="PlayerSoal">
         <PropertyRef Name="PlayerId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_PlayerSoal_Provinsi">
-    <End Role="Provinsi" Type="NusantaraModel.Provinsi" Multiplicity="1" />
-    <End Role="PlayerSoal" Type="NusantaraModel.PlayerSoal" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Provinsi">
-        <PropertyRef Name="SoalId" />
-      </Principal>
-      <Dependent Role="PlayerSoal">
-        <PropertyRef Name="SoalId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

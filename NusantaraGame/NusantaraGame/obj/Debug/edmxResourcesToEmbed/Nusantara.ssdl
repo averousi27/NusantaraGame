@@ -3,15 +3,28 @@
   <EntityContainer Name="NusantaraModelStoreContainer">
     <EntitySet Name="Player" EntityType="NusantaraModel.Store.Player" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PlayerSoal" EntityType="NusantaraModel.Store.PlayerSoal" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Provinsi" EntityType="NusantaraModel.Store.Provinsi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Provinsi" EntityType="NusantaraModel.Store.Provinsi" store:Type="Tables" store:Schema="dbo" store:Name="Provinsi">
+      <DefiningQuery>SELECT 
+      [Provinsi].[SoalId] AS [SoalId], 
+      [Provinsi].[Soal] AS [Soal], 
+      [Provinsi].[URLGambar] AS [URLGambar], 
+      [Provinsi].[LevelSoal] AS [LevelSoal], 
+      [Provinsi].[IbuKota] AS [IbuKota], 
+      [Provinsi].[LuasWilayah] AS [LuasWilayah], 
+      [Provinsi].[Suku] AS [Suku], 
+      [Provinsi].[BahasaDaerah] AS [BahasaDaerah], 
+      [Provinsi].[RumahAdat] AS [RumahAdat], 
+      [Provinsi].[BajuAdat] AS [BajuAdat], 
+      [Provinsi].[Flora] AS [Flora], 
+      [Provinsi].[Fauna] AS [Fauna], 
+      [Provinsi].[PotensiAlam] AS [PotensiAlam], 
+      [Provinsi].[TempatWisata] AS [TempatWisata]
+      FROM [dbo].[Provinsi] AS [Provinsi]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="Setting" EntityType="NusantaraModel.Store.Setting" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="sysdiagrams" EntityType="NusantaraModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK_PlayerSoal_Player" Association="NusantaraModel.Store.FK_PlayerSoal_Player">
       <End Role="Player" EntitySet="Player" />
-      <End Role="PlayerSoal" EntitySet="PlayerSoal" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PlayerSoal_Provinsi" Association="NusantaraModel.Store.FK_PlayerSoal_Provinsi">
-      <End Role="Provinsi" EntitySet="Provinsi" />
       <End Role="PlayerSoal" EntitySet="PlayerSoal" />
     </AssociationSet>
   </EntityContainer>
@@ -31,12 +44,16 @@
     <Property Name="PlayerId" Type="int" />
     <Property Name="Status" Type="varchar" MaxLength="1" />
   </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Nusantara.dbo.Provinsi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
   <EntityType Name="Provinsi">
     <Key>
       <PropertyRef Name="SoalId" />
+      <PropertyRef Name="Soal" />
     </Key>
     <Property Name="SoalId" Type="int" Nullable="false" />
-    <Property Name="Soal" Type="varchar(max)" />
+    <Property Name="Soal" Type="varchar(max)" Nullable="false" />
     <Property Name="URLGambar" Type="varchar(max)" />
     <Property Name="LevelSoal" Type="varchar(max)" />
     <Property Name="IbuKota" Type="varchar(max)" />
@@ -80,18 +97,6 @@
       </Principal>
       <Dependent Role="PlayerSoal">
         <PropertyRef Name="PlayerId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_PlayerSoal_Provinsi">
-    <End Role="Provinsi" Type="NusantaraModel.Store.Provinsi" Multiplicity="1" />
-    <End Role="PlayerSoal" Type="NusantaraModel.Store.PlayerSoal" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Provinsi">
-        <PropertyRef Name="SoalId" />
-      </Principal>
-      <Dependent Role="PlayerSoal">
-        <PropertyRef Name="SoalId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
