@@ -88,10 +88,10 @@
         <RadioButton x:Name="NTT" HorizontalAlignment="Left" Margin="381,216,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_27">
             <TextBlock x:Name="NTTT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Maluku" HorizontalAlignment="Left" Margin="461,207,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_28">
+        <RadioButton x:Name="Maluku" HorizontalAlignment="Left" Margin="462,142,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_28" RenderTransformOrigin="0.456,0.667">
             <TextBlock x:Name="MalukuT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="MalUt" HorizontalAlignment="Left" Margin="440,109,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_29">
+        <RadioButton x:Name="MalUt" HorizontalAlignment="Left" Margin="438,86,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_29">
             <TextBlock x:Name="MalUtT" TextWrapping="Wrap"/>
         </RadioButton>
         <RadioButton x:Name="PapBar" HorizontalAlignment="Left" Margin="514,125,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_30">

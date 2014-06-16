@@ -9,6 +9,8 @@ namespace NusantaraGame
     class PlayerController
     {
         NusantaraEntities context = new NusantaraEntities();
+
+        //Fungsi untuk menambahkan player baru setiap tombol mulai di klik
         public void AddPlayer()
         {
             Player ToUpdate = (from pUpdate in context.Players
@@ -24,9 +26,9 @@ namespace NusantaraGame
 
         public int TampilNyawa()
         {
-            Player a = (from nyawaUpdate in context.Players
-                        where nyawaUpdate.PlayerId == 1
-                        select nyawaUpdate).FirstOrDefault();
+            Player a = (from pUpdate in context.Players
+                        where pUpdate.PlayerId == 1
+                        select pUpdate).FirstOrDefault();
 
             return Convert.ToInt32(a.LastNyawa);
         }
@@ -45,11 +47,26 @@ namespace NusantaraGame
 
         public int TampilScore()
         {
-            Player a = (from nyawaUpdate in context.Players
-                        where nyawaUpdate.PlayerId == 1
-                        select nyawaUpdate).FirstOrDefault();
+            Player a = (from pUpdate in context.Players
+                        where pUpdate.PlayerId == 1
+                        select pUpdate).FirstOrDefault();
+
+            context.SaveChanges();
 
             return Convert.ToInt32(a.LastScore);
+        }
+
+        public int AddScore()
+        {
+            Player score = (from pUpdate in context.Players
+                            where pUpdate.PlayerId == 1
+                            select pUpdate).FirstOrDefault();
+
+            score.LastScore = score.LastScore + 10;
+            //Console.WriteLine(score.LastScore);
+            context.SaveChanges();
+
+            return Convert.ToInt32(score.LastScore);
         }
     }
 }
