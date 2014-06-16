@@ -19,6 +19,5 @@ namespace NusantaraGame
         public string Status { get; set; }
     
         public virtual Player Player { get; set; }
-        public virtual Provinsi Provinsi { get; set; }
     }
 }

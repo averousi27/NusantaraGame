@@ -28,7 +28,5 @@ namespace NusantaraGame
         public string Fauna { get; set; }
         public string PotensiAlam { get; set; }
         public string TempatWisata { get; set; }
-    
-        public virtual PlayerSoal PlayerSoal { get; set; }
     }
 }
