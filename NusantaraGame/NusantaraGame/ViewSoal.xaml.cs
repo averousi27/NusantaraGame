@@ -56,9 +56,6 @@ namespace NusantaraGame
                     idKotaYgBenar.Text = Convert.ToString(item.SoalId);
                 }
             }
-
-
-
             this.ShowDialog();
         }
 
@@ -72,11 +69,29 @@ namespace NusantaraGame
         {
             //Mengecek apakah jawaban benar atau salah
             //Jika Benar:
-            if (RadioButton.NameProperty.Equals(kotaYgBenar.Text))
+            if (NAD.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Jakarta.Name.Equals(kotaYgBenar.Text))
+            {
+                //Konten isiKonten = new Konten();
+                //isiKonten.ShowDialog(ref idSoalSkrg);
+                MessageBox.Show("Jawaban Benar");
             }
 
             //Jika Salah:
@@ -87,19 +102,273 @@ namespace NusantaraGame
             }
         }
 
+        private void SumUt_Checked(object sender, RoutedEventArgs e)
+        {
 
-        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        }
+
+        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
         {
             //Mengecek apakah jawaban benar atau salah
             //Jika Benar:
-            //if (RadioButton.NameProperty.Equals(idSoalSkrg.Text))
-            if (Jakarta.Name.Equals(kotaYgBenar.Text))
+            if (SumUt.Name.Equals(kotaYgBenar.Text))
             {
-                //Konten isiKonten = new Konten();
-                //isiKonten.ShowDialog(ref idSoalSkrg);
                 MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
             }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
 
+        private void RadioButton_Checked_4(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Riau.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_5(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (SumBar.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_6(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Jambi.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_7(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (SumSel.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_8(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Lampung.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_9(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Bengkulu.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_10(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Bangka.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_11(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (KalTim.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_12(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (KalBar.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_13(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (KalTeng.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_14(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (KalSel.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_15(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (SulUt.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_16(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (Gorontalo.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
+            //Jika Salah:
+            else
+            {
+                MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
+                this.Close();
+            }
+        }
+
+        private void RadioButton_Checked_17(object sender, RoutedEventArgs e)
+        {
+            //Mengecek apakah jawaban benar atau salah
+            //Jika Benar:
+            if (SulBar.Name.Equals(kotaYgBenar.Text))
+            {
+                MessageBox.Show("Jawaban Benar");
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
+            }
             //Jika Salah:
             else
             {
