@@ -53,64 +53,64 @@
         <RadioButton x:Name="SulBar" HorizontalAlignment="Left" Margin="330,140,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_17">
             <TextBlock x:Name="SulBarT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="SulSel" HorizontalAlignment="Left" Margin="338,156,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="SulSel" HorizontalAlignment="Left" Margin="338,156,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_18">
             <TextBlock x:Name="SulSelT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="SulTengah" HorizontalAlignment="Left" Margin="354,125,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="SulTengah" HorizontalAlignment="Left" Margin="354,125,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_19">
             <TextBlock x:Name="SulTengahT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="SulTeng" HorizontalAlignment="Left" Margin="368,156,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="SulTeng" HorizontalAlignment="Left" Margin="368,156,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_20">
             <TextBlock x:Name="SulTengT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Banten" HorizontalAlignment="Left" Margin="149,191,0,0" VerticalAlignment="Top" Width="19" Height="15" RenderTransformOrigin="1.737,-1.867">
+        <RadioButton x:Name="Banten" HorizontalAlignment="Left" Margin="149,191,0,0" VerticalAlignment="Top" Width="19" Height="15" RenderTransformOrigin="1.737,-1.867" Checked="RadioButton_Checked_21">
             <TextBlock x:Name="BantenT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Jakarta" HorizontalAlignment="Left" Margin="168,190,0,0" VerticalAlignment="Top"  Checked="RadioButton_Checked_2">
+        <RadioButton x:Name="Jakarta" HorizontalAlignment="Left" Margin="162,180,0,0" VerticalAlignment="Top"  Checked="RadioButton_Checked_2">
             <TextBlock x:Name="JakartaT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="JaTeng" HorizontalAlignment="Left" Margin="206,191,0,0" VerticalAlignment="Top" Width="19" Height="16" RenderTransformOrigin="0.947,0.625">
+        <RadioButton x:Name="JaTeng" HorizontalAlignment="Left" Margin="206,191,0,0" VerticalAlignment="Top" Width="19" Height="16" RenderTransformOrigin="0.947,0.625" Checked="RadioButton_Checked_22">
             <TextBlock x:Name="JaTengT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Yogya" HorizontalAlignment="Left" Margin="209,207,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="Yogya" HorizontalAlignment="Left" Margin="209,207,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_23">
             <TextBlock x:Name="YogyaT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="JaTim" HorizontalAlignment="Left" Margin="247,207,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="JaTim" HorizontalAlignment="Left" Margin="247,207,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_24">
             <TextBlock x:Name="JaTimT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Bali" HorizontalAlignment="Left" Margin="272,216,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="Bali" HorizontalAlignment="Left" Margin="272,216,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_25">
             <TextBlock x:Name="BaliT" TextWrapping="Wrap"/>
         </RadioButton>
         <TextBlock x:Name="nyawa" HorizontalAlignment="Left" Margin="565,-125,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.103,-0.324" Height="47" Width="54"/>
         <TextBlock x:Name="score" HorizontalAlignment="Left" Margin="565,-73,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.522,0.919" Height="48"/>
-        <RadioButton x:Name="NTB" HorizontalAlignment="Left" Margin="302,216,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="NTB" HorizontalAlignment="Left" Margin="302,216,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_26">
             <TextBlock x:Name="NTBT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="NTT" HorizontalAlignment="Left" Margin="381,216,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="NTT" HorizontalAlignment="Left" Margin="381,216,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_27">
             <TextBlock x:Name="NTTT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Maluku" HorizontalAlignment="Left" Margin="461,207,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="Maluku" HorizontalAlignment="Left" Margin="461,207,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_28">
             <TextBlock x:Name="MalukuT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="MalUt" HorizontalAlignment="Left" Margin="440,109,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="MalUt" HorizontalAlignment="Left" Margin="440,109,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_29">
             <TextBlock x:Name="MalUtT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="PapBar" HorizontalAlignment="Left" Margin="514,125,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="PapBar" HorizontalAlignment="Left" Margin="514,125,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_30">
             <TextBlock x:Name="PapBarT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Papua" HorizontalAlignment="Left" Margin="581,156,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="Papua" HorizontalAlignment="Left" Margin="581,156,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_31">
             <TextBlock x:Name="PapuaT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="KepRiau" HorizontalAlignment="Left" Margin="134,93,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="KepRiau" HorizontalAlignment="Left" Margin="134,93,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_32">
             <TextBlock x:Name="KepRiauT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="JaBar" HorizontalAlignment="Left" Margin="173,206,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="JaBar" HorizontalAlignment="Left" Margin="173,201,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_33">
             <TextBlock x:Name="JaBarT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="KalUt" HorizontalAlignment="Left" Margin="288,54,0,0" VerticalAlignment="Top">
+        <RadioButton x:Name="KalUt" HorizontalAlignment="Left" Margin="288,54,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_34">
             <TextBlock x:Name="KalUtT" TextWrapping="Wrap"/>
         </RadioButton>
         <TextBlock x:Name="kotaYgBenar" HorizontalAlignment="Left" Margin="565,39,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"/>
         <TextBlock x:Name="idKotaYgBenar" HorizontalAlignment="Left" Margin="552,71,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="76" Visibility="Hidden"/>
-        <Button Content="Kembali" HorizontalAlignment="Left" Margin="451,295,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Kembali" HorizontalAlignment="Left" Margin="544,276,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
