@@ -48,7 +48,7 @@ namespace NusantaraGame
                     //Ini untuk menampilkan kota yg benar (jawaban) saat itu (di hide dari view, biar user ga bisa liat)
                     //kota yang benar saat itu disimpan di textblock yang bernama kotaYgBenar
                     //Gunanya nanti pas buat ngecek jawaban
-                    kotaYgBenar.Text = item.IbuKota;
+                    kotaYgBenar.Text = item.URLGambar;
 
                     //Ini untuk menyimpan idSoal saat itu
                     //gunanya untuk pasing parameter untuk menampilkan konten
@@ -72,12 +72,16 @@ namespace NusantaraGame
             if (NAD.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -92,6 +96,10 @@ namespace NusantaraGame
                 //Konten isiKonten = new Konten();
                 //isiKonten.ShowDialog(ref idSoalSkrg);
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
+                Konten isiKonten = new Konten();
+                isiKonten.ShowDialog(ref idKotaYgBenar);
             }
 
             //Jika Salah:
@@ -102,11 +110,6 @@ namespace NusantaraGame
             }
         }
 
-        private void SumUt_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
         {
             //Mengecek apakah jawaban benar atau salah
@@ -114,12 +117,16 @@ namespace NusantaraGame
             if (SumUt.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -132,12 +139,16 @@ namespace NusantaraGame
             if (Riau.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -150,12 +161,16 @@ namespace NusantaraGame
             if (SumBar.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -168,12 +183,16 @@ namespace NusantaraGame
             if (Jambi.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -186,12 +205,16 @@ namespace NusantaraGame
             if (SumSel.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -204,12 +227,16 @@ namespace NusantaraGame
             if (Lampung.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -222,12 +249,16 @@ namespace NusantaraGame
             if (Bengkulu.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -240,12 +271,16 @@ namespace NusantaraGame
             if (Bangka.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -258,12 +293,16 @@ namespace NusantaraGame
             if (KalTim.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -276,12 +315,16 @@ namespace NusantaraGame
             if (KalBar.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -294,12 +337,16 @@ namespace NusantaraGame
             if (KalTeng.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -312,12 +359,16 @@ namespace NusantaraGame
             if (KalSel.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -330,12 +381,16 @@ namespace NusantaraGame
             if (SulUt.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -348,12 +403,16 @@ namespace NusantaraGame
             if (Gorontalo.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -366,12 +425,16 @@ namespace NusantaraGame
             if (SulBar.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -384,12 +447,16 @@ namespace NusantaraGame
             if (SulSel.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -402,12 +469,16 @@ namespace NusantaraGame
             if (SulTengah.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -420,12 +491,16 @@ namespace NusantaraGame
             if (SulTeng.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -438,12 +513,16 @@ namespace NusantaraGame
             if (Banten.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -456,12 +535,16 @@ namespace NusantaraGame
             if (JaTeng.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -474,12 +557,16 @@ namespace NusantaraGame
             if (Yogya.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -492,12 +579,16 @@ namespace NusantaraGame
             if (JaTim.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -510,12 +601,16 @@ namespace NusantaraGame
             if (Bali.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -528,12 +623,16 @@ namespace NusantaraGame
             if (NTB.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -546,12 +645,16 @@ namespace NusantaraGame
             if (NTT.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -564,12 +667,16 @@ namespace NusantaraGame
             if (Maluku.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -582,12 +689,16 @@ namespace NusantaraGame
             if (MalUt.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -600,12 +711,16 @@ namespace NusantaraGame
             if (PapBar.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -618,12 +733,16 @@ namespace NusantaraGame
             if (Papua.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -636,12 +755,16 @@ namespace NusantaraGame
             if (KepRiau.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -654,12 +777,16 @@ namespace NusantaraGame
             if (JaBar.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -672,12 +799,16 @@ namespace NusantaraGame
             if (KalUt.Name.Equals(kotaYgBenar.Text))
             {
                 MessageBox.Show("Jawaban Benar");
+                PlayerController tambah = new PlayerController();
+                tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
             }
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
