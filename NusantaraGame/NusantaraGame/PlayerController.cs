@@ -31,6 +31,18 @@ namespace NusantaraGame
             return Convert.ToInt32(a.LastNyawa);
         }
 
+        public int KurangNyawa()
+        {
+            Player nyawa = (from pUpdate in context.Players
+                            where pUpdate.PlayerId == 1
+                            select pUpdate).FirstOrDefault();
+
+            nyawa.LastNyawa -= 1;
+            context.SaveChanges();
+
+            return Convert.ToInt32(nyawa.LastNyawa);
+        }
+
         public int TampilScore()
         {
             Player a = (from nyawaUpdate in context.Players
