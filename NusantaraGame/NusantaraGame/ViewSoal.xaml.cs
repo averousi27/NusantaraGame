@@ -78,6 +78,8 @@ namespace NusantaraGame
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
@@ -97,6 +99,8 @@ namespace NusantaraGame
             //Jika Salah:
             else
             {
+                PlayerController kurangi = new PlayerController();
+                kurangi.KurangNyawa();
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
