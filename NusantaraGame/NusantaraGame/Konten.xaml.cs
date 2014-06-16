@@ -43,10 +43,10 @@ namespace NusantaraGame
                     MessageBox.Show(item.Suku.ToString());
                     Bahasa.Text = item.BahasaDaerah.ToString();
                     MessageBox.Show(item.BahasaDaerah.ToString());
-                    //Suku.Text = item.Suku.ToString();
-                    //MessageBox.Show(item.Suku.ToString());
-                    //Suku.Text = item.Suku.ToString();
-                    //MessageBox.Show(item.Suku.ToString());
+                    //BajuAdat.Text = item.BajuAdat.ToString();
+                    //MessageBox.Show(item.BajuAdat.ToString());
+                    //RumahAdat.Text = item.RumahAdat.ToString();
+                    //MessageBox.Show(item.RumahAdat.ToString());
                     Flora.Text = item.Flora.ToString();
                     MessageBox.Show(item.Flora.ToString());
                     Fauna.Text = item.Fauna.ToString();
