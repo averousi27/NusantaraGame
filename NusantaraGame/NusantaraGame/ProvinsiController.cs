@@ -17,5 +17,11 @@ namespace NusantaraGame
             return result;
         }
 
+        //public void CheckAnswer(string IdSoal)
+        //{
+        //    Provinsi jawaban = from p in context.Provinsis
+        //                       where p.IbuKota
+        //                       select p;
+        //}
     }
 }

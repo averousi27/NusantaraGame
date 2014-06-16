@@ -107,3 +107,7 @@ C:\Users\Faikha Rizqi Aziza\Documents\NusantaraGame\NusantaraGame\NusantaraGame\
 C:\Users\Faikha Rizqi Aziza\Documents\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.g.resources
 C:\Users\Faikha Rizqi Aziza\Documents\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.Properties.Resources.resources
 C:\Users\Faikha Rizqi Aziza\Documents\NusantaraGame\NusantaraGame\NusantaraGame\obj\Debug\NusantaraGame.csproj.GenerateResource.Cache
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\SoalDua.g.cs
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Konten.baml
+E:\5111100152\.NET FP\NusantaraGame\NusantaraGame\obj\Debug\Konten.g.cs

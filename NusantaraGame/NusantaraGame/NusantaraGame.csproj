@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Konten.xaml.cs">
+      <DependentUpon>Konten.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Level.xaml.cs">
       <DependentUpon>Level.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
     <Compile Include="ViewSoal.xaml.cs">
       <DependentUpon>ViewSoal.xaml</DependentUpon>
     </Compile>
+    <Page Include="Konten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Level.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

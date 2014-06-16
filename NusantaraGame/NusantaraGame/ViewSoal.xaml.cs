@@ -36,8 +36,12 @@ namespace NusantaraGame
             int idnya = Convert.ToInt32(IdSoal.Text);
             foreach (Provinsi item in soal)
             {
+
                 if (item.SoalId.Equals(idnya))
+                {
                     TampilSoal.Text = item.Soal.ToString();
+                    MessageBox.Show(item.Soal.ToString());
+                }
             }
             this.ShowDialog();
         }

@@ -16,7 +16,7 @@ namespace NusantaraGame
 {
     public partial class Soal : Window
     {
-        int a=1;
+       // int a=1;
        // str LevelSoal;
 
         public Soal()
