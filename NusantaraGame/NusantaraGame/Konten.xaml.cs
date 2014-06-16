@@ -34,7 +34,6 @@ namespace NusantaraGame
             {
 
                 if (item.SoalId.Equals(idSoal))
-                
                 {
                     IbuKota.Text = item.IbuKota.ToString();
                     MessageBox.Show(item.IbuKota.ToString());
