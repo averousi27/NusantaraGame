@@ -19,7 +19,7 @@ namespace NusantaraGame
 
             ToUpdate.LastNyawa = 3;
             ToUpdate.LastScore = 0;
-
+            Convert.ToInt32(ToUpdate.LastScore);
             context.SaveChanges();
 
         }
@@ -56,17 +56,18 @@ namespace NusantaraGame
             return Convert.ToInt32(a.LastScore);
         }
 
-        public int AddScore()
+        public void AddScore()
         {
             Player score = (from pUpdate in context.Players
                             where pUpdate.PlayerId == 1
                             select pUpdate).FirstOrDefault();
-
+            Convert.ToInt32(score.LastScore);
             score.LastScore = score.LastScore + 10;
             //Console.WriteLine(score.LastScore);
+
             context.SaveChanges();
 
-            return Convert.ToInt32(score.LastScore);
+            //return Convert.ToInt32(score.LastScore);
         }
     }
 }

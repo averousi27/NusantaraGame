@@ -24,39 +24,43 @@ namespace NusantaraGame
             InitializeComponent();
         }
 
-        public void ShowDialog(ref TextBlock IdSoal)
+        public void ShowDialog(ref TextBlock KotaYgBenar)
         {
-            int idSoal = Convert.ToInt32(IdSoal);
+            // //int idSoal = Convert.ToInt32(IdSoal);
             ProvinsiController pc = new ProvinsiController();
-            IEnumerable<Provinsi> konten = pc.GetKonten(idSoal);
+            Provinsi konten = pc.GetKonten(KotaYgBenar.Text);
+            
+            
+            IbuKota.Text = konten.IbuKota.ToString();
+            // MessageBox.Show(konten.IbuKota.ToString());
+            LuasWilayah.Text = konten.LuasWilayah.ToString();
+            //// MessageBox.Show(konten.LuasWilayah.ToString());
+            Suku.Text = konten.Suku.ToString();
+            //// MessageBox.Show(konten.Suku.ToString());
+            Bahasa.Text = konten.BahasaDaerah.ToString();
+            //// MessageBox.Show(konten.BahasaDaerah.ToString());
 
-            foreach (Provinsi item in konten)
-            {
+            //try
+            //{
+                
+            //}
+            //catch()
 
-                if (item.SoalId.Equals(idSoal))
-                {
-                    IbuKota.Text = item.IbuKota.ToString();
-                    MessageBox.Show(item.IbuKota.ToString());
-                    LuasWilayah.Text = item.LuasWilayah.ToString();
-                    MessageBox.Show(item.LuasWilayah.ToString());
-                    Suku.Text = item.Suku.ToString();
-                    MessageBox.Show(item.Suku.ToString());
-                    Bahasa.Text = item.BahasaDaerah.ToString();
-                    MessageBox.Show(item.BahasaDaerah.ToString());
-                    //BajuAdat.Text = item.BajuAdat.ToString();
-                    //MessageBox.Show(item.BajuAdat.ToString());
-                    //RumahAdat.Text = item.RumahAdat.ToString();
-                    //MessageBox.Show(item.RumahAdat.ToString());
-                    Flora.Text = item.Flora.ToString();
-                    MessageBox.Show(item.Flora.ToString());
-                    Fauna.Text = item.Fauna.ToString();
-                    MessageBox.Show(item.Fauna.ToString());
-                    PotensiAlam.Text = item.PotensiAlam.ToString();
-                    MessageBox.Show(item.PotensiAlam.ToString());
-                    TempatWisata.Text = item.TempatWisata.ToString();
-                    MessageBox.Show(item.TempatWisata.ToString());
-                }
-            }
+            Flora.Text = konten.Flora.ToString();
+            //// //BajuAdat.Text = konten.BajuAdat.ToString();
+            ////// MessageBox.Show(konten.BajuAdat.ToString());
+            //// //RumahAdat.Text = konten.RumahAdat.ToString();
+            //// //MessageBox.Show(konten.RumahAdat.ToString());
+           
+            //// MessageBox.Show(konten.Flora.ToString());
+            Fauna.Text = konten.Fauna.ToString();
+            //// MessageBox.Show(konten.Fauna.ToString());
+            PotensiAlam.Text = konten.PotensiAlam.ToString();
+            //// MessageBox.Show(konten.PotensiAlam.ToString());
+            TempatWisata.Text = konten.TempatWisata.ToString();
+            //// MessageBox.Show(konten.TempatWisata.ToString());
+
+             
             this.ShowDialog();
         }
     }

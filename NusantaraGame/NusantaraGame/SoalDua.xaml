@@ -7,7 +7,7 @@
         <TextBlock x:Name="IdLevelDua" HorizontalAlignment="Left" Margin="55,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="106,238,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_8"/>
         <Button HorizontalAlignment="Left" Margin="38,46,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_1">
-            <TextBlock x:Name="SoalDua_1" TextWrapping="Wrap" Text="3"/>
+            <TextBlock x:Name="SoalDua_1" TextWrapping="Wrap" Text="1"/>
         </Button>
         <Button HorizontalAlignment="Left" Margin="115,46,0,0" VerticalAlignment="Top" Width="54" Height="45" Click="Button_Click_2">
             <TextBlock x:Name="SoalDua_2" TextWrapping="Wrap" Text="2"/>

@@ -191,6 +191,97 @@
   <ItemGroup>
     <Resource Include="Images\PetaIndonesia.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bali_PakaianAdta_PayasAgung.jpg" />
+    <Resource Include="Images\Bali_RumahAdat.jpg" />
+    <Resource Include="Images\Banten_Pakaian_Adat_Pengantin.jpg" />
+    <Resource Include="Images\Banten_RumahAdat_Baduy.jpg" />
+    <Resource Include="Images\Banten_RumahAdat_Baduy1.jpg" />
+    <Resource Include="Images\Jakarta_Pakaian_AbangNone.jpg" />
+    <Resource Include="Images\Jakarta_Rumah_Kebaya.jpg" />
+    <Resource Include="Images\JawaBarat_Pakaian_Adat.jpg" />
+    <Resource Include="Images\JawaBarat_Rumah_Kasepuhan.jpg" />
+    <Resource Include="Images\JawaTengah_PakaianAdat_Jawa.jpg" />
+    <Resource Include="Images\JawaTengah_RumahAdat_Padepokan.jpg" />
+    <Resource Include="Images\JawaTengah_RumahAdat_Padepokan1.jpg" />
+    <Resource Include="Images\JawaTimur_PakaianAdat.jpg" />
+    <Resource Include="Images\JawaTimur_RumahAdat.jpg" />
+    <Resource Include="Images\NTB_PakaianAdat_Sumbawa.jpg" />
+    <Resource Include="Images\NTB_RumahAdat.jpg" />
+    <Resource Include="Images\NTT_PakaianAdat.jpg" />
+    <Resource Include="Images\NTT_RumahAdat.jpg" />
+    <Resource Include="Images\Yogyakarta_RumahAdat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\baju aceh.jpg" />
+    <Resource Include="Images\baju adat gorontalo.jpg" />
+    <Resource Include="Images\baju adat jambi.jpg" />
+    <Resource Include="Images\baju adat lampung.jpg" />
+    <Resource Include="Images\baju adat riau.jpg" />
+    <Resource Include="Images\Baju adat sulawesi barat.jpg" />
+    <Resource Include="Images\baju adat sulteng.jpg" />
+    <Resource Include="Images\baju adat sultra.jpg" />
+    <Resource Include="Images\baju adat sulut.jpg" />
+    <Resource Include="Images\pakaian adat sumut.jpg" />
+    <Resource Include="Images\pakaian-adat-bengkulu.jpg" />
+    <Resource Include="Images\rumah aceh.JPG" />
+    <Resource Include="Images\rumah ada lampung.jpg" />
+    <Resource Include="Images\rumah adat gorontalo.jpg" />
+    <Resource Include="Images\rumah adat padang.jpg" />
+    <Resource Include="Images\rumah adat riau.jpg" />
+    <Resource Include="Images\rumah adat sulawesi selatan.jpg" />
+    <Resource Include="Images\rumah adat sulbar.jpg" />
+    <Resource Include="Images\rumah adat sulsel.jpg" />
+    <Resource Include="Images\rumah adat sultenggara.jpg" />
+    <Resource Include="Images\rumah adat sulut.jpg" />
+    <Resource Include="Images\rumah adat sumbar.jpg" />
+    <Resource Include="Images\rumah adat sumut.png" />
+    <Resource Include="Images\Rumah-Adat-Bengkulu.jpg" />
+    <Resource Include="Images\rumah-adat-jambi.jpg" />
+    <Resource Include="Images\Rumah-Adat-Provinsi-Sulawesi-Tengah1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Aceh_Gbr.jpg" />
+    <Resource Include="Images\Baju Adat KalBar.jpg" />
+    <Resource Include="Images\Baju Adat KalTeng.jpg" />
+    <Resource Include="Images\Bali_Gbr.jpg" />
+    <Resource Include="Images\Bengkulu_Gbr.jpg" />
+    <Resource Include="Images\DIY_Gbr.jpg" />
+    <Resource Include="Images\DKI_Gbr.jpg" />
+    <Resource Include="Images\JaBar_Gbr.jpg" />
+    <Resource Include="Images\Jambi_Gbr.jpg" />
+    <Resource Include="Images\JaTeng_Gbr.jpg" />
+    <Resource Include="Images\JaTim_Gbr.jpg" />
+    <Resource Include="Images\KalBar.jpg" />
+    <Resource Include="Images\KalSel.jpg" />
+    <Resource Include="Images\KalTeng.jpg" />
+    <Resource Include="Images\KalTim_Gbr.jpg" />
+    <Resource Include="Images\Lampung_Gbr.jpg" />
+    <Resource Include="Images\Maluku_Gbr.jpg" />
+    <Resource Include="Images\NTB_Gbr.jpg" />
+    <Resource Include="Images\NTT_Gbr.jpg" />
+    <Resource Include="Images\Papua_Gbr.jpg" />
+    <Resource Include="Images\Riau_Gbr.jpg" />
+    <Resource Include="Images\Rumah Baileo-Maluku.JPG" />
+    <Resource Include="Images\Rumah Baileo-Maluku1.JPG" />
+    <Resource Include="Images\Rumah Baloy-KalUt.JPG" />
+    <Resource Include="Images\Rumah Banjar Bubungan Tinggi-KalSel.JPG" />
+    <Resource Include="Images\Rumah Betang-KalTeng.JPG" />
+    <Resource Include="Images\Rumah Honai-Papua.JPG" />
+    <Resource Include="Images\Rumah Honai-Papua1.JPG" />
+    <Resource Include="Images\Rumah Kaki Seribu-Papua Barat.JPG" />
+    <Resource Include="Images\Rumah Lamin-KalTim.JPG" />
+    <Resource Include="Images\Rumah Lamin-KalTim1.JPG" />
+    <Resource Include="Images\Rumah Panjang-KalBar.JPG" />
+    <Resource Include="Images\Rumah Panjang-KalBar1.JPG" />
+    <Resource Include="Images\Rumah Sasadu-Maluku Utara.JPG" />
+    <Resource Include="Images\SulSel_Gbr.jpg" />
+    <Resource Include="Images\SulTeng_Gbr.jpg" />
+    <Resource Include="Images\SulUt_Gbr.jpg" />
+    <Resource Include="Images\SumBar_Gbr.jpg" />
+    <Resource Include="Images\SumSel_Gbr.jpg" />
+    <Resource Include="Images\SumUt_Gbr.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
