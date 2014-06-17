@@ -18,11 +18,18 @@ namespace NusantaraGame
         }
 
         //Untuk mendapatkan konten provinsi berdasarkan idSoal
-        public IEnumerable<Provinsi> GetKonten(int idSoal)
+        //public IEnumerable<Provinsi> GetKonten(int idSoal)
+        //{
+        //    IEnumerable<Provinsi> result = from p in context.Provinsis
+        //                                   where p.SoalId.Equals(idSoal)
+        //                                   select p;
+        //    return result;
+        //}
+        public Provinsi GetKonten(string KotaYgBenar)
         {
-            IEnumerable<Provinsi> result = from p in context.Provinsis
-                                           where p.SoalId.Equals(idSoal)
-                                           select p;
+            Provinsi result = (from p in context.Provinsis
+                               where p.URLGambar.Equals(KotaYgBenar)
+                               select p).FirstOrDefault();
             return result;
         }
 

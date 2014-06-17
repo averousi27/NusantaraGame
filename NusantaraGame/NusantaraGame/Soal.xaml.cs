@@ -42,6 +42,7 @@ namespace NusantaraGame
 
         public void ShowDialog(ref TextBlock TextLevel)
         {
+           // Console.WriteLine(TextLevel.Text);
             IdLevel.Text = TextLevel.Text;
             this.ShowDialog();
         }

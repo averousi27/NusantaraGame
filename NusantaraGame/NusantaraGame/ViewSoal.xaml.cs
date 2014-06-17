@@ -53,7 +53,7 @@ namespace NusantaraGame
                     //Ini untuk menyimpan idSoal saat itu
                     //gunanya untuk pasing parameter untuk menampilkan konten
                     //idSoal saat itu disimpan di textblock yan bernama idKotaYgBenar
-                    idKotaYgBenar.Text = Convert.ToString(item.SoalId);
+                   // idKotaYgBenar.Text = Convert.ToString(item.SoalId);
                 }
             }
             this.ShowDialog();
@@ -71,8 +71,8 @@ namespace NusantaraGame
             //Jika Benar:
             if (NAD.Name.Equals(kotaYgBenar.Text))
             {
-                MessageBox.Show("Jawaban Benar");
                 PlayerController tambah = new PlayerController();
+                MessageBox.Show("Jawaban Benar");
                 tambah.AddScore();
                 Konten isiKonten = new Konten();
                 isiKonten.ShowDialog(ref idKotaYgBenar);
@@ -99,7 +99,7 @@ namespace NusantaraGame
                 PlayerController tambah = new PlayerController();
                 tambah.AddScore();
                 Konten isiKonten = new Konten();
-                isiKonten.ShowDialog(ref idKotaYgBenar);
+                isiKonten.ShowDialog(ref kotaYgBenar);
             }
 
             //Jika Salah:
