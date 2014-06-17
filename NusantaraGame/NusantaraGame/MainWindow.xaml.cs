@@ -31,7 +31,7 @@ namespace NusantaraGame
                 MessageBox.Show(item.ToString());
             }*/
         }
-
+        
         private void Button_Click_Mulai(object sender, RoutedEventArgs e)
         {
             PlayerController pc = new PlayerController();
@@ -40,6 +40,7 @@ namespace NusantaraGame
             Level level = new Level();
             level.Show();
             this.Hide();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
