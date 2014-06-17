@@ -24,10 +24,6 @@ namespace NusantaraGame
         {
             InitializeComponent();
 
-            //Jalanin background music
-            //System.Media.SoundPlayer sp = new System.Media.SoundPlayer("files/desaku.m4a");
-            //sp.PlayLooping();
-
             /*SoalController pc = new SoalController();
             /*IEnumerable<Provinsi> provinsis = pc.GetAllData();
             foreach (var item in provinsis)
@@ -35,7 +31,7 @@ namespace NusantaraGame
                 MessageBox.Show(item.ToString());
             }*/
         }
-
+        
         private void Button_Click_Mulai(object sender, RoutedEventArgs e)
         {
             PlayerController pc = new PlayerController();
@@ -44,6 +40,7 @@ namespace NusantaraGame
             Level level = new Level();
             level.Show();
             this.Hide();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

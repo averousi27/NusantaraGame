@@ -22,6 +22,14 @@ namespace NusantaraGame
         public Level() //Passing value level to Soal.xaml.cs
         {
             InitializeComponent();
+            PlaySound();
+        }
+
+        private void PlaySound()
+        {
+            BgMusic bm = new BgMusic();
+            bm.BgMusicPath = AppDomain.CurrentDomain.BaseDirectory + "background music";
+            soundPlayer.DataContext = bm;            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
