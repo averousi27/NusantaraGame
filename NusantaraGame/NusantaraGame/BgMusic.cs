@@ -9,5 +9,6 @@ namespace NusantaraGame
     class BgMusic
     {
         public string BgMusicPath{get;set;}
+
     }
 }
