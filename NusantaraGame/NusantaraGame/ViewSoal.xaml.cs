@@ -45,8 +45,8 @@ namespace NusantaraGame
                     //MessageBox.Show(item.Soal.ToString());
                     //^^^^
 
-                    //Ini untuk menampilkan kota yg benar (jawaban) saat itu (di hide dari view, biar user ga bisa liat)
-                    //kota yang benar saat itu disimpan di textblock yang bernama kotaYgBenar
+                    //Ini untuk menampilkan provinsi yg benar (jawaban) saat itu (di hide dari view, biar user ga bisa liat)
+                    //provinsi yang benar saat itu disimpan di textblock yang bernama kotaYgBenar
                     //Gunanya nanti pas buat ngecek jawaban
                     kotaYgBenar.Text = item.URLGambar;
 
@@ -91,7 +91,7 @@ namespace NusantaraGame
         {
             //Mengecek apakah jawaban benar atau salah
             //Jika Benar:
-            if (Jakarta.Name.Equals(kotaYgBenar.Text))
+            if (DKI.Name.Equals(kotaYgBenar.Text))
             {
                 //Konten isiKonten = new Konten();
                 //isiKonten.ShowDialog(ref idSoalSkrg);
@@ -812,6 +812,11 @@ namespace NusantaraGame
                 MessageBox.Show("Jawaban kamu salah! Nyawa kamu berkurang 1");
                 this.Close();
             }
+        }
+
+        private void Button_Click_Kembali(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
         }
     }
 }

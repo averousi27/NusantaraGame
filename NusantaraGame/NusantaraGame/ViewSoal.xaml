@@ -65,7 +65,7 @@
         <RadioButton x:Name="Banten" HorizontalAlignment="Left" Margin="149,191,0,0" VerticalAlignment="Top" Width="19" Height="15" RenderTransformOrigin="1.737,-1.867" Checked="RadioButton_Checked_21">
             <TextBlock x:Name="BantenT" TextWrapping="Wrap"/>
         </RadioButton>
-        <RadioButton x:Name="Jakarta" HorizontalAlignment="Left" Margin="162,180,0,0" VerticalAlignment="Top"  Checked="RadioButton_Checked_2">
+        <RadioButton x:Name="DKI" HorizontalAlignment="Left" Margin="162,180,0,0" VerticalAlignment="Top"  Checked="RadioButton_Checked_2">
             <TextBlock x:Name="JakartaT" TextWrapping="Wrap"/>
         </RadioButton>
         <RadioButton x:Name="JaTeng" HorizontalAlignment="Left" Margin="206,191,0,0" VerticalAlignment="Top" Width="19" Height="16" RenderTransformOrigin="0.947,0.625" Checked="RadioButton_Checked_22">
@@ -111,6 +111,6 @@
         </RadioButton>
         <TextBlock x:Name="kotaYgBenar" HorizontalAlignment="Left" Margin="565,39,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"/>
         <TextBlock x:Name="idKotaYgBenar" HorizontalAlignment="Left" Margin="552,71,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="76" Visibility="Hidden"/>
-        <Button Content="Kembali" HorizontalAlignment="Left" Margin="544,276,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Kembali" HorizontalAlignment="Left" Margin="544,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Kembali"/>
     </Grid>
 </Window>

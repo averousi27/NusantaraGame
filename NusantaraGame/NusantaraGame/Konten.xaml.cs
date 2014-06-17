@@ -47,9 +47,9 @@ namespace NusantaraGame
             //catch()
 
             Flora.Text = konten.Flora.ToString();
-            //// //BajuAdat.Text = konten.BajuAdat.ToString();
+            BajuAdat.Text = konten.BajuAdat.ToString();
             ////// MessageBox.Show(konten.BajuAdat.ToString());
-            //// //RumahAdat.Text = konten.RumahAdat.ToString();
+            RumahAdat.Text = konten.RumahAdat.ToString();
             //// //MessageBox.Show(konten.RumahAdat.ToString());
            
             //// MessageBox.Show(konten.Flora.ToString());

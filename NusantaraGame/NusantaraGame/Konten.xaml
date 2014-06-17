@@ -12,7 +12,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="346,86,0,0" TextWrapping="Wrap" Text="Bahasa Daerah:" VerticalAlignment="Top" Height="19" Width="82"/>
         <TextBlock x:Name="Bahasa" HorizontalAlignment="Left" Margin="476,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="23,162,0,0" TextWrapping="Wrap" Text="Baju Adat:" VerticalAlignment="Top" Height="19" Width="82"/>
+        <TextBlock x:Name="BajuAdat" HorizontalAlignment="Left" Margin="110,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="128" Visibility="Hidden"/>
+        <Image x:Name="BajuAdatImg" Source="{Binding Text, UpdateSourceTrigger=PropertyChanged, ElementName=BajuAdat}" HorizontalAlignment="Left" Height="62" Margin="105,162,0,0" VerticalAlignment="Top" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="346,162,0,0" TextWrapping="Wrap" Text="Rumah Adat:" VerticalAlignment="Top" Height="19" Width="82"/>
+        <TextBlock x:Name="RumahAdat" HorizontalAlignment="Left" Margin="475,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="128" Visibility="Hidden"/>
+        <Image x:Name="RumahAdatImg" Source="{Binding Text, UpdateSourceTrigger=PropertyChanged, ElementName=BajuAdat}" HorizontalAlignment="Left" Height="62" Margin="105,162,0,0" VerticalAlignment="Top" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="23,294,0,0" TextWrapping="Wrap" Text="Flora:" VerticalAlignment="Top" Height="19" Width="82"/>
         <TextBlock HorizontalAlignment="Left" Margin="346,294,0,0" TextWrapping="Wrap" Text="Fauna:" VerticalAlignment="Top" Height="19" Width="82"/>
         <TextBlock x:Name="Flora" HorizontalAlignment="Left" Margin="162,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="111"/>
