@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NusantaraGame
 {
-    class PlayerController
+    public class PlayerController
     {
         NusantaraEntities context = new NusantaraEntities();
 
@@ -62,12 +62,9 @@ namespace NusantaraGame
                             where pUpdate.PlayerId == 1
                             select pUpdate).FirstOrDefault();
             Convert.ToInt32(score.LastScore);
-            score.LastScore = score.LastScore + 10;
-            //Console.WriteLine(score.LastScore);
+            score.LastScore = score.LastScore + 10; 
 
-            context.SaveChanges();
-
-            //return Convert.ToInt32(score.LastScore);
+            context.SaveChanges(); 
         }
     }
 }

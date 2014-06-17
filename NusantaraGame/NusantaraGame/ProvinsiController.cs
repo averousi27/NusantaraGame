@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NusantaraGame
 {
-    class ProvinsiController
+    public class ProvinsiController
     {
         NusantaraEntities context = new NusantaraEntities();
         public IEnumerable<Provinsi> GetLevel(string idLevel)

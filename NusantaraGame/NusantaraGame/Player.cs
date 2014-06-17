@@ -14,11 +14,22 @@ namespace NusantaraGame
     
     public partial class Player
     {
+        private string p;
+        private int skorawal;
+        private int nyawaawal;
+        private int p1;
+
         public Player()
         {
             this.PlayerSoals = new HashSet<PlayerSoal>();
         }
-    
+
+        public Player(int id, int skorawal, int nyawaawal)
+        {
+            this.PlayerId = id;
+            this.LastScore = skorawal;
+            this.LastNyawa = nyawaawal;
+        }
         public int PlayerId { get; set; }
         public Nullable<int> LastNyawa { get; set; }
         public Nullable<int> LastScore { get; set; }
