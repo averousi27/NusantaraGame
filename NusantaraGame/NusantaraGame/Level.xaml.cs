@@ -28,7 +28,7 @@ namespace NusantaraGame
         private void PlaySound()
         {
             BgMusic bm = new BgMusic();
-            bm.BgMusicPath = AppDomain.CurrentDomain.BaseDirectory;
+            bm.BgMusicPath = "/files/desaku.wav";
             soundPlayer.DataContext = bm;            
         }
 
