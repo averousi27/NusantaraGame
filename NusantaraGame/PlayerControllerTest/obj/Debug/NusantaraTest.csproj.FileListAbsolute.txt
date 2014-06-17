@@ -1,0 +1,9 @@
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\PlayerControllerTest.dll
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\PlayerControllerTest.pdb
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\NusantaraGame.exe
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\EntityFramework.dll
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\NusantaraGame.pdb
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\bin\Debug\EntityFramework.xml
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\obj\Debug\NusantaraTest.csprojResolveAssemblyReference.cache
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\obj\Debug\PlayerControllerTest.dll
+C:\Users\Andina\Documents\NusantaraGame\NusantaraGame\PlayerControllerTest\obj\Debug\PlayerControllerTest.pdb
