@@ -60,6 +60,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BgMusic.cs" />
     <Compile Include="Konten.xaml.cs">
       <DependentUpon>Konten.xaml</DependentUpon>
     </Compile>
