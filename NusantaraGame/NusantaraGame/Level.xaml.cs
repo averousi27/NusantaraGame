@@ -28,16 +28,14 @@ namespace NusantaraGame
         private void PlaySound()
         {
             BgMusic bm = new BgMusic();
-            bm.BgMusicPath = AppDomain.CurrentDomain.BaseDirectory + "background music";
+            bm.BgMusicPath = AppDomain.CurrentDomain.BaseDirectory;
             soundPlayer.DataContext = bm;            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
             Soal soal1 = new Soal();
             soal1.ShowDialog(ref TextLevelSatu);
-
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
